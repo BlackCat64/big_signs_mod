@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "minecraft:item/oak_sign"
+    "layer0": "big_signs:item/one_line_oak_sign"
   }
 }
