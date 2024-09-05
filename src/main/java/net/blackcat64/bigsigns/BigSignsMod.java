@@ -2,6 +2,7 @@ package net.blackcat64.bigsigns;
 
 import com.mojang.logging.LogUtils;
 import net.blackcat64.bigsigns.block.ModBlocks;
+import net.blackcat64.bigsigns.item.ModCreativeModeTabs;
 import net.blackcat64.bigsigns.item.ModItems;
 import net.blackcat64.bigsigns.block.entity.ModBlockEntities;
 import net.minecraftforge.api.distmarker.Dist;
@@ -25,6 +26,7 @@ public class BigSignsMod {
     public BigSignsMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
@@ -39,7 +41,6 @@ public class BigSignsMod {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
