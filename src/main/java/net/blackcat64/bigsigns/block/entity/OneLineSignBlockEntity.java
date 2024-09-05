@@ -8,11 +8,11 @@ import net.minecraft.world.level.block.state.BlockState;
 public class OneLineSignBlockEntity extends SignBlockEntity {
 
     public OneLineSignBlockEntity(BlockPos pPos, BlockState pBlockState) {
-        super(, pPos, pBlockState);
+        super(ModBlockEntities.ONE_LINE_SIGN.get(), pPos, pBlockState);
     }
 
     @Override
     public BlockEntityType<?> getType() {
-        return
+        return ModBlockEntities.ONE_LINE_SIGN.get();
     }
 }
