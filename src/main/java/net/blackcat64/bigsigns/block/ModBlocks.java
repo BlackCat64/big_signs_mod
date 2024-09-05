@@ -22,7 +22,7 @@ public class ModBlocks {
             () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), WoodType.OAK));
 
     public static final RegistryObject<Block> ONE_LINE_OAK_WALL_SIGN = BLOCKS.register("one_line_oak_wall_sign",
-            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), WoodType.OAK));
+            () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), WoodType.OAK));
 
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
