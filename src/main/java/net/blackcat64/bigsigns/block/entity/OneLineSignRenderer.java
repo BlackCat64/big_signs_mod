@@ -11,6 +11,6 @@ public class OneLineSignRenderer extends SignRenderer {
 
     @Override
     public float getSignTextRenderScale() {
-        return 3.3F;
+        return 3.3F; // This is exactly 4.95 times larger than a regular sign's text
     }
 }
