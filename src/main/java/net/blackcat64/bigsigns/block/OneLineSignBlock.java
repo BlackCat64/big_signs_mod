@@ -27,15 +27,4 @@ public class OneLineSignBlock extends StandingSignBlock {
     public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
         return new OneLineSignBlockEntity(pPos, pState);
     }
-
-    @Override
-    public void openTextEdit(Player pPlayer, SignBlockEntity pSignEntity, boolean isFrontText) {
-        if (pPlayer.level().isClientSide) {
-            pSignEntity.setAllowedPlayerEditor(pPlayer.getUUID());
-            Minecraft.getInstance().setScreen(new OneLineSignEditScreen(pSignEntity, isFrontText, Minecraft.getInstance().isTextFilteringEnabled()));
-        }
-        else {
-            pPlayer.openTextEdit(pSignEntity, isFrontText);
-        }
-    }
 }
