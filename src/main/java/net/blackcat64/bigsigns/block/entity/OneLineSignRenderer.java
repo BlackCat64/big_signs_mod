@@ -2,6 +2,7 @@ package net.blackcat64.bigsigns.block.entity;
 
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
+import net.minecraft.world.phys.Vec3;
 
 public class OneLineSignRenderer extends SignRenderer {
 
