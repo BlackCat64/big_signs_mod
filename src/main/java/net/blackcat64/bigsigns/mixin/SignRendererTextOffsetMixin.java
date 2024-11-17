@@ -15,9 +15,10 @@ public abstract class SignRendererTextOffsetMixin {
 
     @Inject(method = "getTextOffset", at = @At("HEAD"), cancellable = true)
     protected void injectTextOffset(CallbackInfoReturnable<Vec3> info) {
-        if (getSignTextRenderScale() > 3.0F) { // detect if a big sign is being rendered
-            Vec3 current = info.getReturnValue();
-            info.setReturnValue(new Vec3(2.0, 0.5, current.z)); // override the x-offset to 0.2
+        final float Z_OFFSET = 0.046666667F;
+
+        if (getSignTextRenderScale() == 3.3F) { // detect if a one-line sign is being rendered
+            info.setReturnValue(new Vec3(0.031F, 0.31F, Z_OFFSET));
         }
     }
 }
