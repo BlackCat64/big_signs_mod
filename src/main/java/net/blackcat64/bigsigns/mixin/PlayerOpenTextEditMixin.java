@@ -1,5 +1,7 @@
 package net.blackcat64.bigsigns.mixin;
 
+import net.blackcat64.bigsigns.block.entity.OneLineHangingSignBlockEntity;
+import net.blackcat64.bigsigns.block.entity.OneLineHangingSignEditScreen;
 import net.blackcat64.bigsigns.block.entity.OneLineSignBlockEntity;
 import net.blackcat64.bigsigns.block.entity.OneLineSignEditScreen;
 import net.minecraft.client.Minecraft;
@@ -22,6 +24,10 @@ public class PlayerOpenTextEditMixin {
         if (pSignEntity instanceof OneLineSignBlockEntity oneLineSignBlockEntity) {
             this.minecraft.setScreen(new OneLineSignEditScreen(oneLineSignBlockEntity, pIsFrontText, this.minecraft.isTextFilteringEnabled()));
             ci.cancel(); // end the target method early
+        }
+        else if (pSignEntity instanceof OneLineHangingSignBlockEntity oneLineHangingSignBlockEntity) {
+            this.minecraft.setScreen(new OneLineHangingSignEditScreen(oneLineHangingSignBlockEntity, pIsFrontText, this.minecraft.isTextFilteringEnabled()));
+            ci.cancel();
         }
     }
 }

@@ -12,6 +12,6 @@ public class OneLineHangingSignRenderer extends HangingSignRenderer {
 
     @Override
     public float getSignTextRenderScale() {
-        return 2.85F; // This is exactly 4.95 times larger than a regular hanging sign's text
+        return 2.85F; // This is exactly 3.16667 times larger than a regular hanging sign's text
     }
 }
