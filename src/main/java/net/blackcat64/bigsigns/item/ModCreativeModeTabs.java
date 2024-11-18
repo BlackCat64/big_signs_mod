@@ -47,6 +47,7 @@ public class ModCreativeModeTabs {
 
                         // add one-line sign items
                         pOutput.accept(ModItems.ONE_LINE_OAK_SIGN.get());
+                        pOutput.accept(ModItems.ONE_LINE_OAK_HANGING_SIGN.get());
                     })
                     .build());
 
