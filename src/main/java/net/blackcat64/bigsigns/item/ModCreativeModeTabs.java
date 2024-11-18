@@ -26,6 +26,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(Items.JUNGLE_SIGN);
                         pOutput.accept(Items.ACACIA_SIGN);
                         pOutput.accept(Items.DARK_OAK_SIGN);
+                        pOutput.accept(Items.CRIMSON_SIGN);
+                        pOutput.accept(Items.WARPED_SIGN);
                         pOutput.accept(Items.MANGROVE_SIGN);
                         pOutput.accept(Items.CHERRY_SIGN);
                         pOutput.accept(Items.BAMBOO_SIGN);
@@ -37,6 +39,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(Items.JUNGLE_HANGING_SIGN);
                         pOutput.accept(Items.ACACIA_HANGING_SIGN);
                         pOutput.accept(Items.DARK_OAK_HANGING_SIGN);
+                        pOutput.accept(Items.CRIMSON_HANGING_SIGN);
+                        pOutput.accept(Items.WARPED_HANGING_SIGN);
                         pOutput.accept(Items.MANGROVE_HANGING_SIGN);
                         pOutput.accept(Items.CHERRY_HANGING_SIGN);
                         pOutput.accept(Items.BAMBOO_HANGING_SIGN);
