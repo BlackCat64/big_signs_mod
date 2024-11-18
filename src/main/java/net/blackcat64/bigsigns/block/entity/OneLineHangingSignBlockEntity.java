@@ -15,4 +15,9 @@ public class OneLineHangingSignBlockEntity extends SignBlockEntity {
     public BlockEntityType<?> getType() {
         return ModBlockEntities.ONE_LINE_HANGING_SIGN.get();
     }
+
+    @Override
+    public int getMaxTextLineWidth() {
+        return 19;
+    }
 }
