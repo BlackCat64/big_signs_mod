@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "big_signs:one_line_spruce_sign"
+          "name": "big_signs:one_line_oak_hanging_sign"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "big_signs:blocks/one_line_spruce_sign"
+  "random_sequence": "big_signs:blocks/one_line_hanging_signs/one_line_oak_wall_hanging_sign"
 }
