@@ -18,7 +18,7 @@ public abstract class HangingSignRendererTextOffsetMixin {
         final float Z_OFFSET = 0.073F;
 
         if (getSignTextRenderScale() == 2.85F) { // detect if a one-line hanging sign is being rendered
-            info.setReturnValue(new Vec3(0.031F, -0.6F, Z_OFFSET));
+            info.setReturnValue(new Vec3(0.027F, -0.3F, Z_OFFSET));
         }
     }
 }

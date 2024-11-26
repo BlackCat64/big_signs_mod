@@ -20,4 +20,9 @@ public class OneLineHangingSignBlockEntity extends SignBlockEntity {
     public int getMaxTextLineWidth() {
         return 19;
     }
+
+    @Override
+    public int getTextLineHeight() {
+        return 4;
+    }
 }
