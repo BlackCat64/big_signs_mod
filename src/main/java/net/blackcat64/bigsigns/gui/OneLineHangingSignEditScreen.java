@@ -1,4 +1,4 @@
-package net.blackcat64.bigsigns.block.entity;
+package net.blackcat64.bigsigns.gui;
 
 import net.minecraft.client.gui.screens.inventory.HangingSignEditScreen;
 import net.minecraft.client.gui.screens.inventory.SignEditScreen;

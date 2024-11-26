@@ -1,5 +1,6 @@
 package net.blackcat64.bigsigns.mixin;
 
+import net.blackcat64.bigsigns.block.entity.OneLineHangingSignBlockEntity;
 import net.blackcat64.bigsigns.block.entity.OneLineSignBlockEntity;
 import net.minecraft.client.gui.font.TextFieldHelper;
 import net.minecraft.client.gui.screens.inventory.AbstractSignEditScreen;
@@ -22,19 +23,19 @@ public class AbstractSignEditScreenMixin {
 
     @Inject(method = "<init>(Lnet/minecraft/world/level/block/entity/SignBlockEntity;ZZLnet/minecraft/network/chat/Component;)V", at = @At("TAIL"))
     private void injectConstructor(SignBlockEntity pSign, boolean pIsFrontText, boolean pIsFiltered, Component pTitle, CallbackInfo info) {
-        if (sign instanceof OneLineSignBlockEntity)
+        if (sign instanceof OneLineSignBlockEntity || sign instanceof OneLineHangingSignBlockEntity)
             this.line = 1;
     }
 
     @Inject(method = "init", at = @At("HEAD"))
     private void injectInit(CallbackInfo info) {
-        if (sign instanceof OneLineSignBlockEntity)
+        if (sign instanceof OneLineSignBlockEntity || sign instanceof OneLineHangingSignBlockEntity)
             this.line = 1;
     }
 
     @Inject(method = "keyPressed", at = @At("HEAD"), cancellable = true)
     private void injectOnKeyPress(int pKeyCode, int pScanCode, int pModifiers, CallbackInfoReturnable<Boolean> info) {
-        if (sign instanceof OneLineSignBlockEntity) {
+        if (sign instanceof OneLineSignBlockEntity || sign instanceof OneLineHangingSignBlockEntity) {
             this.line = 1;
             if (pKeyCode != 265 && pKeyCode != 264 && pKeyCode != 257 && pKeyCode != 335) // If the key pressed is NOT Up arrow, down arrow or Enter, handle it normally
                 return;

@@ -1,9 +1,9 @@
 package net.blackcat64.bigsigns.mixin;
 
 import net.blackcat64.bigsigns.block.entity.OneLineHangingSignBlockEntity;
-import net.blackcat64.bigsigns.block.entity.OneLineHangingSignEditScreen;
+import net.blackcat64.bigsigns.gui.OneLineHangingSignEditScreen;
 import net.blackcat64.bigsigns.block.entity.OneLineSignBlockEntity;
-import net.blackcat64.bigsigns.block.entity.OneLineSignEditScreen;
+import net.blackcat64.bigsigns.gui.OneLineSignEditScreen;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.world.level.block.entity.SignBlockEntity;

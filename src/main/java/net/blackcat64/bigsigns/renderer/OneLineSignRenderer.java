@@ -1,4 +1,4 @@
-package net.blackcat64.bigsigns.block.entity;
+package net.blackcat64.bigsigns.renderer;
 
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
