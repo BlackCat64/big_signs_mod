@@ -22,11 +22,19 @@ public class ModBlocks {
             () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), WoodType.OAK));
     public static final RegistryObject<Block> ONE_LINE_OAK_WALL_SIGN = BLOCKS.register("one_line_oak_wall_sign",
             () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), WoodType.OAK));
-
     public static final RegistryObject<Block> ONE_LINE_OAK_HANGING_SIGN = BLOCKS.register("one_line_oak_hanging_sign",
             () -> new OneLineHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), WoodType.OAK));
     public static final RegistryObject<Block> ONE_LINE_OAK_WALL_HANGING_SIGN = BLOCKS.register("one_line_oak_wall_hanging_sign",
             () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), WoodType.OAK));
+
+    public static final RegistryObject<Block> ONE_LINE_SPRUCE_SIGN = BLOCKS.register("one_line_spruce_sign",
+            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_SIGN), WoodType.SPRUCE));
+    public static final RegistryObject<Block> ONE_LINE_SPRUCE_WALL_SIGN = BLOCKS.register("one_line_spruce_wall_sign",
+            () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_WALL_SIGN), WoodType.SPRUCE));
+    public static final RegistryObject<Block> ONE_LINE_SPRUCE_HANGING_SIGN = BLOCKS.register("one_line_spruce_hanging_sign",
+            () -> new OneLineHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_HANGING_SIGN), WoodType.SPRUCE));
+    public static final RegistryObject<Block> ONE_LINE_SPRUCE_WALL_HANGING_SIGN = BLOCKS.register("one_line_spruce_wall_hanging_sign",
+            () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_WALL_HANGING_SIGN), WoodType.SPRUCE));
 
 
 
