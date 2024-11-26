@@ -23,6 +23,11 @@ public class ModItems {
     public static final RegistryObject<Item> ONE_LINE_SPRUCE_HANGING_SIGN = ITEMS.register("one_line_spruce_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ONE_LINE_SPRUCE_HANGING_SIGN.get(), ModBlocks.ONE_LINE_SPRUCE_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
+    public static final RegistryObject<Item> ONE_LINE_BIRCH_SIGN = ITEMS.register("one_line_birch_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ONE_LINE_BIRCH_SIGN.get(), ModBlocks.ONE_LINE_BIRCH_WALL_SIGN.get()));
+    public static final RegistryObject<Item> ONE_LINE_BIRCH_HANGING_SIGN = ITEMS.register("one_line_birch_hanging_sign",
+            () -> new HangingSignItem(ModBlocks.ONE_LINE_BIRCH_HANGING_SIGN.get(), ModBlocks.ONE_LINE_BIRCH_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

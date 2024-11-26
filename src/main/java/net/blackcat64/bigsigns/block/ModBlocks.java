@@ -36,6 +36,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> ONE_LINE_SPRUCE_WALL_HANGING_SIGN = BLOCKS.register("one_line_spruce_wall_hanging_sign",
             () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_WALL_HANGING_SIGN), WoodType.SPRUCE));
 
+    public static final RegistryObject<Block> ONE_LINE_BIRCH_SIGN = BLOCKS.register("one_line_birch_sign",
+            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_SIGN), WoodType.BIRCH));
+    public static final RegistryObject<Block> ONE_LINE_BIRCH_WALL_SIGN = BLOCKS.register("one_line_birch_wall_sign",
+            () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_WALL_SIGN), WoodType.BIRCH));
+    public static final RegistryObject<Block> ONE_LINE_BIRCH_HANGING_SIGN = BLOCKS.register("one_line_birch_hanging_sign",
+            () -> new OneLineHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_HANGING_SIGN), WoodType.BIRCH));
+    public static final RegistryObject<Block> ONE_LINE_BIRCH_WALL_HANGING_SIGN = BLOCKS.register("one_line_birch_wall_hanging_sign",
+            () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_WALL_HANGING_SIGN), WoodType.BIRCH));
+
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
