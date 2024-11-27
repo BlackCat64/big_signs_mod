@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "big_signs:block/one_line_signs/one_line_birch_sign"
+      "model": "big_signs:block/one_line_birch_sign"
     }
   }
 }

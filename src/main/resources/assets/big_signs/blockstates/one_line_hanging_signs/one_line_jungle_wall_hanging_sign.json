@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "big_signs:block/one_line_hanging_signs/one_line_jungle_hanging_sign"
+      "model": "big_signs:block/one_line_jungle_hanging_sign"
     }
   }
 }
