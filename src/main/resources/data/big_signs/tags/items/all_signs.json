@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:signs",
+    "#minecraft:hanging_signs",
+    "#big_signs:one_line_signs",
+    "#big_signs:one_line_hanging_signs"
+  ]
+}
