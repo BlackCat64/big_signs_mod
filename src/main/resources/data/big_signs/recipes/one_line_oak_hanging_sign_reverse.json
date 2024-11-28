@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "one_line_hanging_signs",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "big_signs:one_line_oak_hanging_sign"
+    }
+  ],
+  "result": {
+    "item": "minecraft:oak_hanging_sign"
+  }
+}
