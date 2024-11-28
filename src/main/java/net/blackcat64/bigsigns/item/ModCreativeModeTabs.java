@@ -28,6 +28,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ONE_LINE_DARK_OAK_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_MANGROVE_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_CHERRY_SIGN.get());
+                        pOutput.accept(ModItems.ONE_LINE_BAMBOO_SIGN.get());
 
                         // add one-line hanging sign items
                         pOutput.accept(ModItems.ONE_LINE_OAK_HANGING_SIGN.get());
@@ -38,6 +39,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ONE_LINE_DARK_OAK_HANGING_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_MANGROVE_HANGING_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_CHERRY_HANGING_SIGN.get());
+                        pOutput.accept(ModItems.ONE_LINE_BAMBOO_HANGING_SIGN.get());
                     })
                     .build());
 
