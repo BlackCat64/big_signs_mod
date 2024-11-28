@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "one_line_signs",
+  "group": "one_line_signs_reverse",
   "category": "misc",
   "ingredients": [
     {
