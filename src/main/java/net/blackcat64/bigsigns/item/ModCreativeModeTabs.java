@@ -24,12 +24,14 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ONE_LINE_SPRUCE_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_BIRCH_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_JUNGLE_SIGN.get());
+                        pOutput.accept(ModItems.ONE_LINE_ACACIA_SIGN.get());
 
                         // add one-line hanging sign items
                         pOutput.accept(ModItems.ONE_LINE_OAK_HANGING_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_SPRUCE_HANGING_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_BIRCH_HANGING_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_JUNGLE_HANGING_SIGN.get());
+                        pOutput.accept(ModItems.ONE_LINE_ACACIA_HANGING_SIGN.get());
                     })
                     .build());
 
