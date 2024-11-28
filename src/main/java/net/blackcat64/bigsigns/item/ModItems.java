@@ -38,6 +38,11 @@ public class ModItems {
     public static final RegistryObject<Item> ONE_LINE_ACACIA_HANGING_SIGN = ITEMS.register("one_line_acacia_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ONE_LINE_ACACIA_HANGING_SIGN.get(), ModBlocks.ONE_LINE_ACACIA_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
+    public static final RegistryObject<Item> ONE_LINE_DARK_OAK_SIGN = ITEMS.register("one_line_dark_oak_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ONE_LINE_DARK_OAK_SIGN.get(), ModBlocks.ONE_LINE_DARK_OAK_WALL_SIGN.get()));
+    public static final RegistryObject<Item> ONE_LINE_DARK_OAK_HANGING_SIGN = ITEMS.register("one_line_dark_oak_hanging_sign",
+            () -> new HangingSignItem(ModBlocks.ONE_LINE_DARK_OAK_HANGING_SIGN.get(), ModBlocks.ONE_LINE_DARK_OAK_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
