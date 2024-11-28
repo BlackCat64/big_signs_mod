@@ -9,5 +9,6 @@
   ],
   "result": {
     "item": "minecraft:oak_sign"
-  }
+  },
+  "advancement": "big_signs:recipes/unlock_sign_recipes"
 }

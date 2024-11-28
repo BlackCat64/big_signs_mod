@@ -9,5 +9,6 @@
   ],
   "result": {
     "item": "big_signs:one_line_oak_hanging_sign"
-  }
+  },
+  "advancement": "big_signs:recipes/unlock_sign_recipes"
 }
