@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "big_signs:one_line_oak_wall_sign",
+    "big_signs:one_line_spruce_wall_sign",
+    "big_signs:one_line_birch_wall_sign",
+    "big_signs:one_line_jungle_wall_sign",
+    "big_signs:one_line_acacia_wall_sign",
+    "big_signs:one_line_dark_oak_wall_sign",
+    "big_signs:one_line_mangrove_wall_sign",
+    "big_signs:one_line_cherry_wall_sign",
+    "big_signs:one_line_bamboo_wall_sign",
+    "big_signs:one_line_crimson_wall_sign",
+    "big_signs:one_line_warped_wall_sign"
+  ]
+}
