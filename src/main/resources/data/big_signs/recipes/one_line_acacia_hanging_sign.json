@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "one_line_hanging_signs_reverse",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:acacia_hanging_sign"
+    }
+  ],
+  "result": {
+    "item": "big_signs:one_line_acacia_hanging_sign"
+  },
+  "advancement": "big_signs:recipes/unlock_sign_recipes"
+}

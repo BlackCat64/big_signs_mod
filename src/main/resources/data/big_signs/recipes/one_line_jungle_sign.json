@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "one_line_signs",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:jungle_sign"
+    }
+  ],
+  "result": {
+    "item": "big_signs:one_line_jungle_sign"
+  },
+  "advancement": "big_signs:recipes/unlock_sign_recipes"
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "one_line_signs_reverse",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "big_signs:one_line_dark_oak_sign"
+    }
+  ],
+  "result": {
+    "item": "minecraft:dark_oak_sign"
+  },
+  "advancement": "big_signs:recipes/unlock_sign_recipes"
+}
