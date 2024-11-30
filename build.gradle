@@ -220,6 +220,12 @@ mixin {
 }
 
 jar {
+    jar {
+        archiveBaseName.set(mod_id)
+        archiveVersion.set(mod_version)
+        archiveFileName.set("big_signs_mod_v1.0-forge_1.20.1.jar")
+    }
+
     manifest {
         attributes 'MixinConfigs': 'mixins.big_signs.json'
     }
