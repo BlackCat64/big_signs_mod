@@ -29,7 +29,57 @@
       "big_signs:one_line_oak_sign",
       "big_signs:one_line_oak_sign_reverse",
       "big_signs:one_line_oak_hanging_sign",
-      "big_signs:one_line_oak_hanging_sign_reverse"
+      "big_signs:one_line_oak_hanging_sign_reverse",
+
+      "big_signs:one_line_spruce_sign",
+      "big_signs:one_line_spruce_sign_reverse",
+      "big_signs:one_line_spruce_hanging_sign",
+      "big_signs:one_line_spruce_hanging_sign_reverse",
+
+      "big_signs:one_line_birch_sign",
+      "big_signs:one_line_birch_sign_reverse",
+      "big_signs:one_line_birch_hanging_sign",
+      "big_signs:one_line_birch_hanging_sign_reverse",
+
+      "big_signs:one_line_jungle_sign",
+      "big_signs:one_line_jungle_sign_reverse",
+      "big_signs:one_line_jungle_hanging_sign",
+      "big_signs:one_line_jungle_hanging_sign_reverse",
+
+      "big_signs:one_line_acacia_sign",
+      "big_signs:one_line_acacia_sign_reverse",
+      "big_signs:one_line_acacia_hanging_sign",
+      "big_signs:one_line_acacia_hanging_sign_reverse",
+
+      "big_signs:one_line_dark_oak_sign",
+      "big_signs:one_line_dark_oak_sign_reverse",
+      "big_signs:one_line_dark_oak_hanging_sign",
+      "big_signs:one_line_dark_oak_hanging_sign_reverse",
+
+      "big_signs:one_line_mangrove_sign",
+      "big_signs:one_line_mangrove_sign_reverse",
+      "big_signs:one_line_mangrove_hanging_sign",
+      "big_signs:one_line_mangrove_hanging_sign_reverse",
+
+      "big_signs:one_line_cherry_sign",
+      "big_signs:one_line_cherry_sign_reverse",
+      "big_signs:one_line_cherry_hanging_sign",
+      "big_signs:one_line_cherry_hanging_sign_reverse",
+
+      "big_signs:one_line_bamboo_sign",
+      "big_signs:one_line_bamboo_sign_reverse",
+      "big_signs:one_line_bamboo_hanging_sign",
+      "big_signs:one_line_bamboo_hanging_sign_reverse",
+
+      "big_signs:one_line_crimson_sign",
+      "big_signs:one_line_crimson_sign_reverse",
+      "big_signs:one_line_crimson_hanging_sign",
+      "big_signs:one_line_crimson_hanging_sign_reverse",
+
+      "big_signs:one_line_warped_sign",
+      "big_signs:one_line_warped_sign_reverse",
+      "big_signs:one_line_warped_hanging_sign",
+      "big_signs:one_line_warped_hanging_sign_reverse"
     ]
   }
 }
