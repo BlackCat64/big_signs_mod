@@ -3,12 +3,11 @@
 Overview
 --------
 This mod aims to improve Sign functionality in Minecraft, mainly by offering variants of Signs that have bigger text.
-It is a work in progress at the moment, and I am working on it in my spare time.
 
 Initial Features
 ----------------
-In the initial release, I plan to add one new variant of sign: The **One-Line Sign**.
-This sign block will have only 1 line of text, as opposed to the usual 4, however the text will be large enough to fill the entire sign.
+In the initial release, I added two new variants of sign: The **One-Line Sign** and **One-Line Hanging Sign**.
+These sign blocks have only 1 line of text, as opposed to the usual 4, however the text is large enough to fill the entire sign.
 Only a few characters may be entered, due to the larger text size and the sign being phyiscally the same size as the vanilla Sign block.
 
 Planned Features
@@ -33,4 +32,5 @@ This is a different approach to my main mod, [Better Tools and Armor](https://gi
 
 Download and Install
 --------------------
-This mod is not in a releasable state yet. I plan to release it for Minecraft 1.20.1 only, at first.
+Big Signs is available to download on [CurseForge](https://curseforge.com/minecraft/mc-mods/big-signs) and [Modrinth](https://modrinth.com/mod/big-signs).
+There are no dependencies required - simply add the JAR file to your `.minecraft/mods` folder, load up Minecraft 1.20.1 with the Forge mod loader, and you're good to go!
