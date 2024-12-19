@@ -25,7 +25,8 @@ public class ModBlockEntities {
                             ModBlocks.ONE_LINE_CHERRY_SIGN.get(), ModBlocks.ONE_LINE_CHERRY_WALL_SIGN.get(),
                             ModBlocks.ONE_LINE_BAMBOO_SIGN.get(), ModBlocks.ONE_LINE_BAMBOO_WALL_SIGN.get(),
                             ModBlocks.ONE_LINE_CRIMSON_SIGN.get(), ModBlocks.ONE_LINE_CRIMSON_WALL_SIGN.get(),
-                            ModBlocks.ONE_LINE_WARPED_SIGN.get(), ModBlocks.ONE_LINE_WARPED_WALL_SIGN.get()).build(null));
+                            ModBlocks.ONE_LINE_WARPED_SIGN.get(), ModBlocks.ONE_LINE_WARPED_WALL_SIGN.get(),
+                            ModBlocks.ONE_LINE_BLACK_METAL_SIGN.get(), ModBlocks.ONE_LINE_BLACK_METAL_WALL_SIGN.get()).build(null));
 
     public static final RegistryObject<BlockEntityType<OneLineHangingSignBlockEntity>> ONE_LINE_HANGING_SIGN =
             BLOCK_ENTITIES.register("one_line_hanging_sign", () ->

@@ -68,6 +68,9 @@ public class ModItems {
     public static final RegistryObject<Item> ONE_LINE_WARPED_HANGING_SIGN = ITEMS.register("one_line_warped_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ONE_LINE_WARPED_HANGING_SIGN.get(), ModBlocks.ONE_LINE_WARPED_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
+    public static final RegistryObject<Item> ONE_LINE_BLACK_METAL_SIGN = ITEMS.register("one_line_black_metal_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ONE_LINE_BLACK_METAL_SIGN.get(), ModBlocks.ONE_LINE_BLACK_METAL_WALL_SIGN.get()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
