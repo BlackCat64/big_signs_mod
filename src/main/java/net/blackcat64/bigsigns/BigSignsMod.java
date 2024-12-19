@@ -5,6 +5,8 @@ import net.blackcat64.bigsigns.block.ModBlocks;
 import net.blackcat64.bigsigns.item.ModCreativeModeTabs;
 import net.blackcat64.bigsigns.item.ModItems;
 import net.blackcat64.bigsigns.block.entity.ModBlockEntities;
+import net.blackcat64.bigsigns.util.ModWoodTypes;
+import net.minecraft.client.renderer.Sheets;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -57,6 +59,7 @@ public class BigSignsMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            Sheets.addWoodType(ModWoodTypes.BLACK_METAL_SIGN);
         }
     }
 }

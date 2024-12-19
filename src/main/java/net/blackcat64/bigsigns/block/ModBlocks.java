@@ -2,6 +2,7 @@ package net.blackcat64.bigsigns.block;
 
 import net.blackcat64.bigsigns.BigSignsMod;
 import net.blackcat64.bigsigns.item.ModItems;
+import net.blackcat64.bigsigns.util.ModWoodTypes;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -116,6 +117,11 @@ public class ModBlocks {
             () -> new OneLineHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_HANGING_SIGN), WoodType.WARPED));
     public static final RegistryObject<Block> ONE_LINE_WARPED_WALL_HANGING_SIGN = BLOCKS.register("one_line_warped_wall_hanging_sign",
             () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_WALL_HANGING_SIGN), WoodType.WARPED));
+
+    public static final RegistryObject<Block> ONE_LINE_BLACK_METAL_SIGN = BLOCKS.register("one_line_black_metal_sign",
+            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.BLACK_METAL_SIGN));
+    public static final RegistryObject<Block> ONE_LINE_BLACK_METAL_WALL_SIGN = BLOCKS.register("one_line_black_metal_wall_sign",
+            () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.BLACK_METAL_SIGN));
 
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
