@@ -46,6 +46,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ONE_LINE_WARPED_HANGING_SIGN.get());
 
                         pOutput.accept(ModItems.ONE_LINE_BLACK_METAL_SIGN.get());
+                        pOutput.accept(ModItems.ONE_LINE_BLACK_METAL_HANGING_SIGN.get());
                     })
                     .build());
 
