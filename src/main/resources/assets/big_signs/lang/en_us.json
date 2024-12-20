@@ -47,5 +47,9 @@
   "block.big_signs.one_line_black_metal_sign": "One-Line Black Metal Sign",
   "block.big_signs.one_line_black_metal_wall_sign": "One-Line Black Metal Wall Sign",
   "block.big_signs.one_line_black_metal_hanging_sign": "One-Line Black Metal Hanging Sign",
-  "block.big_signs.one_line_black_metal_wall_hanging_sign": "One-Line Black Metal Wall Hanging Sign"
+  "block.big_signs.one_line_black_metal_wall_hanging_sign": "One-Line Black Metal Wall Hanging Sign",
+  "block.big_signs.one_line_gray_metal_sign": "One-Line Gray Metal Sign",
+  "block.big_signs.one_line_gray_metal_wall_sign": "One-Line Gray Metal Wall Sign",
+  "block.big_signs.one_line_gray_metal_hanging_sign": "One-Line Gray Metal Hanging Sign",
+  "block.big_signs.one_line_gray_metal_wall_hanging_sign": "One-Line Gray Metal Wall Hanging Sign"
 }
