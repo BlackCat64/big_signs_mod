@@ -6,4 +6,5 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 
 public class ModWoodTypes {
     public static final WoodType BLACK_METAL_SIGN = WoodType.register(new WoodType(BigSignsMod.MOD_ID + ":black_metal_sign", BlockSetType.IRON));
+    public static final WoodType GRAY_METAL_SIGN = WoodType.register(new WoodType(BigSignsMod.MOD_ID + ":gray_metal_sign", BlockSetType.IRON));
 }

@@ -60,6 +60,7 @@ public class BigSignsMod {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             Sheets.addWoodType(ModWoodTypes.BLACK_METAL_SIGN);
+            Sheets.addWoodType(ModWoodTypes.GRAY_METAL_SIGN);
         }
     }
 }
