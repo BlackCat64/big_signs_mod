@@ -27,7 +27,24 @@ public class ModBlockEntities {
                             ModBlocks.ONE_LINE_CRIMSON_SIGN.get(), ModBlocks.ONE_LINE_CRIMSON_WALL_SIGN.get(),
                             ModBlocks.ONE_LINE_WARPED_SIGN.get(), ModBlocks.ONE_LINE_WARPED_WALL_SIGN.get(),
                             ModBlocks.ONE_LINE_BLACK_METAL_SIGN.get(), ModBlocks.ONE_LINE_BLACK_METAL_WALL_SIGN.get(),
-                            ModBlocks.ONE_LINE_GRAY_METAL_SIGN.get(), ModBlocks.ONE_LINE_GRAY_METAL_WALL_SIGN.get()).build(null));
+                            ModBlocks.ONE_LINE_GRAY_METAL_SIGN.get(), ModBlocks.ONE_LINE_GRAY_METAL_WALL_SIGN.get(),
+                            ModBlocks.ONE_LINE_BROWN_METAL_SIGN.get(), ModBlocks.ONE_LINE_BROWN_METAL_WALL_SIGN.get(),
+                            ModBlocks.ONE_LINE_CREAM_METAL_SIGN.get(), ModBlocks.ONE_LINE_CREAM_METAL_WALL_SIGN.get(),
+                            ModBlocks.ONE_LINE_CYAN_METAL_SIGN.get(), ModBlocks.ONE_LINE_CYAN_METAL_WALL_SIGN.get(),
+                            ModBlocks.ONE_LINE_DARK_ORANGE_METAL_SIGN.get(), ModBlocks.ONE_LINE_DARK_ORANGE_METAL_WALL_SIGN.get(),
+                            ModBlocks.ONE_LINE_DARK_PINK_METAL_SIGN.get(), ModBlocks.ONE_LINE_DARK_PINK_METAL_WALL_SIGN.get(),
+                            ModBlocks.ONE_LINE_DARK_RED_METAL_SIGN.get(), ModBlocks.ONE_LINE_DARK_RED_METAL_WALL_SIGN.get(),
+                            ModBlocks.ONE_LINE_GREEN_METAL_SIGN.get(), ModBlocks.ONE_LINE_GREEN_METAL_WALL_SIGN.get(),
+                            ModBlocks.ONE_LINE_LIME_METAL_SIGN.get(), ModBlocks.ONE_LINE_LIME_METAL_WALL_SIGN.get(),
+                            ModBlocks.ONE_LINE_LIGHT_BLUE_METAL_SIGN.get(), ModBlocks.ONE_LINE_LIGHT_BLUE_METAL_WALL_SIGN.get(),
+                            ModBlocks.ONE_LINE_LIGHT_GRAY_METAL_SIGN.get(), ModBlocks.ONE_LINE_LIGHT_GRAY_METAL_WALL_SIGN.get(),
+                            ModBlocks.ONE_LINE_MAGENTA_METAL_SIGN.get(), ModBlocks.ONE_LINE_MAGENTA_METAL_WALL_SIGN.get(),
+                            ModBlocks.ONE_LINE_ORANGE_METAL_SIGN.get(), ModBlocks.ONE_LINE_ORANGE_METAL_WALL_SIGN.get(),
+                            ModBlocks.ONE_LINE_PINK_METAL_SIGN.get(), ModBlocks.ONE_LINE_PINK_METAL_WALL_SIGN.get(),
+                            ModBlocks.ONE_LINE_PURPLE_METAL_SIGN.get(), ModBlocks.ONE_LINE_PURPLE_METAL_WALL_SIGN.get(),
+                            ModBlocks.ONE_LINE_RED_METAL_SIGN.get(), ModBlocks.ONE_LINE_RED_METAL_WALL_SIGN.get(),
+                            ModBlocks.ONE_LINE_WHITE_METAL_SIGN.get(), ModBlocks.ONE_LINE_WHITE_METAL_WALL_SIGN.get(),
+                            ModBlocks.ONE_LINE_YELLOW_METAL_SIGN.get(), ModBlocks.ONE_LINE_YELLOW_METAL_WALL_SIGN.get()).build(null));
 
     public static final RegistryObject<BlockEntityType<OneLineHangingSignBlockEntity>> ONE_LINE_HANGING_SIGN =
             BLOCK_ENTITIES.register("one_line_hanging_sign", () ->
@@ -44,7 +61,26 @@ public class ModBlockEntities {
                             ModBlocks.ONE_LINE_CRIMSON_HANGING_SIGN.get(), ModBlocks.ONE_LINE_CRIMSON_WALL_HANGING_SIGN.get(),
                             ModBlocks.ONE_LINE_WARPED_HANGING_SIGN.get(), ModBlocks.ONE_LINE_WARPED_WALL_HANGING_SIGN.get(),
                             ModBlocks.ONE_LINE_BLACK_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_BLACK_METAL_WALL_HANGING_SIGN.get(),
-                            ModBlocks.ONE_LINE_GRAY_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_GRAY_METAL_WALL_HANGING_SIGN.get()).build(null));
+                            ModBlocks.ONE_LINE_GRAY_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_GRAY_METAL_WALL_HANGING_SIGN.get(),
+                            ModBlocks.ONE_LINE_BROWN_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_BROWN_METAL_WALL_HANGING_SIGN.get(),
+                            ModBlocks.ONE_LINE_CREAM_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_CREAM_METAL_WALL_HANGING_SIGN.get(),
+                            ModBlocks.ONE_LINE_CYAN_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_CYAN_METAL_WALL_HANGING_SIGN.get(),
+                            ModBlocks.ONE_LINE_DARK_ORANGE_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_DARK_ORANGE_METAL_WALL_HANGING_SIGN.get(),
+                            ModBlocks.ONE_LINE_DARK_PINK_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_DARK_PINK_METAL_WALL_HANGING_SIGN.get(),
+                            ModBlocks.ONE_LINE_DARK_RED_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_DARK_RED_METAL_WALL_HANGING_SIGN.get(),
+                            ModBlocks.ONE_LINE_GREEN_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_GREEN_METAL_WALL_HANGING_SIGN.get(),
+                            ModBlocks.ONE_LINE_LIME_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_LIME_METAL_WALL_HANGING_SIGN.get(),
+                            ModBlocks.ONE_LINE_LIGHT_BLUE_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_LIGHT_BLUE_METAL_WALL_HANGING_SIGN.get(),
+                            ModBlocks.ONE_LINE_LIGHT_GRAY_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_LIGHT_GRAY_METAL_WALL_HANGING_SIGN.get(),
+                            ModBlocks.ONE_LINE_MAGENTA_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_MAGENTA_METAL_WALL_HANGING_SIGN.get(),
+                            ModBlocks.ONE_LINE_ORANGE_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_ORANGE_METAL_WALL_HANGING_SIGN.get(),
+                            ModBlocks.ONE_LINE_PINK_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_PINK_METAL_WALL_HANGING_SIGN.get(),
+                            ModBlocks.ONE_LINE_PURPLE_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_PURPLE_METAL_WALL_HANGING_SIGN.get(),
+                            ModBlocks.ONE_LINE_RED_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_RED_METAL_WALL_HANGING_SIGN.get(),
+                            ModBlocks.ONE_LINE_WHITE_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_WHITE_METAL_WALL_HANGING_SIGN.get(),
+                            ModBlocks.ONE_LINE_YELLOW_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_YELLOW_METAL_WALL_HANGING_SIGN.get()).build(null));
+
+
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);
