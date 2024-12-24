@@ -78,94 +78,94 @@ public class ModItems {
     public static final RegistryObject<Item> ONE_LINE_GRAY_METAL_HANGING_SIGN = ITEMS.register("one_line_gray_metal_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ONE_LINE_GRAY_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_GRAY_METAL_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> ONE_LINE_BLUE_METAL_SIGN = ITEMS.register("one_line_blue_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_BLUE_METAL_SIGN = ITEMS.register("one_line_blue_metal_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ONE_LINE_BLUE_METAL_SIGN.get(), ModBlocks.ONE_LINE_BLUE_METAL_WALL_SIGN.get()));
-    public static final RegistryObject<Item> ONE_LINE_BLUE_METAL_HANGING_SIGN = ITEMS.register("one_line_blue_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_BLUE_METAL_HANGING_SIGN = ITEMS.register("one_line_blue_metal_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ONE_LINE_BLUE_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_BLUE_METAL_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> ONE_LINE_BROWN_METAL_SIGN = ITEMS.register("one_line_brown_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_BROWN_METAL_SIGN = ITEMS.register("one_line_brown_metal_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ONE_LINE_BROWN_METAL_SIGN.get(), ModBlocks.ONE_LINE_BROWN_METAL_WALL_SIGN.get()));
-    public static final RegistryObject<Item> ONE_LINE_BROWN_METAL_HANGING_SIGN = ITEMS.register("one_line_brown_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_BROWN_METAL_HANGING_SIGN = ITEMS.register("one_line_brown_metal_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ONE_LINE_BROWN_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_BROWN_METAL_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> ONE_LINE_CREAM_METAL_SIGN = ITEMS.register("one_line_cream_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_CREAM_METAL_SIGN = ITEMS.register("one_line_cream_metal_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ONE_LINE_CREAM_METAL_SIGN.get(), ModBlocks.ONE_LINE_CREAM_METAL_WALL_SIGN.get()));
-    public static final RegistryObject<Item> ONE_LINE_CREAM_METAL_HANGING_SIGN = ITEMS.register("one_line_cream_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_CREAM_METAL_HANGING_SIGN = ITEMS.register("one_line_cream_metal_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ONE_LINE_CREAM_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_CREAM_METAL_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> ONE_LINE_CYAN_METAL_SIGN = ITEMS.register("one_line_cyan_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_CYAN_METAL_SIGN = ITEMS.register("one_line_cyan_metal_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ONE_LINE_CYAN_METAL_SIGN.get(), ModBlocks.ONE_LINE_CYAN_METAL_WALL_SIGN.get()));
-    public static final RegistryObject<Item> ONE_LINE_CYAN_METAL_HANGING_SIGN = ITEMS.register("one_line_cyan_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_CYAN_METAL_HANGING_SIGN = ITEMS.register("one_line_cyan_metal_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ONE_LINE_CYAN_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_CYAN_METAL_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> ONE_LINE_DARK_ORANGE_METAL_SIGN = ITEMS.register("one_line_dark_orange_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_DARK_ORANGE_METAL_SIGN = ITEMS.register("one_line_dark_orange_metal_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ONE_LINE_DARK_ORANGE_METAL_SIGN.get(), ModBlocks.ONE_LINE_DARK_ORANGE_METAL_WALL_SIGN.get()));
-    public static final RegistryObject<Item> ONE_LINE_DARK_ORANGE_METAL_HANGING_SIGN = ITEMS.register("one_line_dark_orange_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_DARK_ORANGE_METAL_HANGING_SIGN = ITEMS.register("one_line_dark_orange_metal_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ONE_LINE_DARK_ORANGE_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_DARK_ORANGE_METAL_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> ONE_LINE_DARK_PINK_METAL_SIGN = ITEMS.register("one_line_dark_pink_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_DARK_PINK_METAL_SIGN = ITEMS.register("one_line_dark_pink_metal_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ONE_LINE_DARK_PINK_METAL_SIGN.get(), ModBlocks.ONE_LINE_DARK_PINK_METAL_WALL_SIGN.get()));
-    public static final RegistryObject<Item> ONE_LINE_DARK_PINK_METAL_HANGING_SIGN = ITEMS.register("one_line_dark_pink_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_DARK_PINK_METAL_HANGING_SIGN = ITEMS.register("one_line_dark_pink_metal_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ONE_LINE_DARK_PINK_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_DARK_PINK_METAL_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> ONE_LINE_DARK_RED_METAL_SIGN = ITEMS.register("one_line_dark_red_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_DARK_RED_METAL_SIGN = ITEMS.register("one_line_dark_red_metal_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ONE_LINE_DARK_RED_METAL_SIGN.get(), ModBlocks.ONE_LINE_DARK_RED_METAL_WALL_SIGN.get()));
-    public static final RegistryObject<Item> ONE_LINE_DARK_RED_METAL_HANGING_SIGN = ITEMS.register("one_line_dark_red_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_DARK_RED_METAL_HANGING_SIGN = ITEMS.register("one_line_dark_red_metal_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ONE_LINE_DARK_RED_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_DARK_RED_METAL_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> ONE_LINE_GREEN_METAL_SIGN = ITEMS.register("one_line_green_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_GREEN_METAL_SIGN = ITEMS.register("one_line_green_metal_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ONE_LINE_GREEN_METAL_SIGN.get(), ModBlocks.ONE_LINE_GREEN_METAL_WALL_SIGN.get()));
-    public static final RegistryObject<Item> ONE_LINE_GREEN_METAL_HANGING_SIGN = ITEMS.register("one_line_green_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_GREEN_METAL_HANGING_SIGN = ITEMS.register("one_line_green_metal_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ONE_LINE_GREEN_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_GREEN_METAL_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> ONE_LINE_LIME_METAL_SIGN = ITEMS.register("one_line_lime_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_LIME_METAL_SIGN = ITEMS.register("one_line_lime_metal_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ONE_LINE_LIME_METAL_SIGN.get(), ModBlocks.ONE_LINE_LIME_METAL_WALL_SIGN.get()));
-    public static final RegistryObject<Item> ONE_LINE_LIME_METAL_HANGING_SIGN = ITEMS.register("one_line_lime_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_LIME_METAL_HANGING_SIGN = ITEMS.register("one_line_lime_metal_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ONE_LINE_LIME_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_LIME_METAL_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> ONE_LINE_LIGHT_BLUE_METAL_SIGN = ITEMS.register("one_line_light_blue_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_LIGHT_BLUE_METAL_SIGN = ITEMS.register("one_line_light_blue_metal_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ONE_LINE_LIGHT_BLUE_METAL_SIGN.get(), ModBlocks.ONE_LINE_LIGHT_BLUE_METAL_WALL_SIGN.get()));
-    public static final RegistryObject<Item> ONE_LINE_LIGHT_BLUE_METAL_HANGING_SIGN = ITEMS.register("one_line_light_blue_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_LIGHT_BLUE_METAL_HANGING_SIGN = ITEMS.register("one_line_light_blue_metal_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ONE_LINE_LIGHT_BLUE_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_LIGHT_BLUE_METAL_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> ONE_LINE_LIGHT_GRAY_METAL_SIGN = ITEMS.register("one_line_light_gray_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_LIGHT_GRAY_METAL_SIGN = ITEMS.register("one_line_light_gray_metal_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ONE_LINE_LIGHT_GRAY_METAL_SIGN.get(), ModBlocks.ONE_LINE_LIGHT_GRAY_METAL_WALL_SIGN.get()));
-    public static final RegistryObject<Item> ONE_LINE_LIGHT_GRAY_METAL_HANGING_SIGN = ITEMS.register("one_line_light_gray_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_LIGHT_GRAY_METAL_HANGING_SIGN = ITEMS.register("one_line_light_gray_metal_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ONE_LINE_LIGHT_GRAY_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_LIGHT_GRAY_METAL_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> ONE_LINE_MAGENTA_METAL_SIGN = ITEMS.register("one_line_magenta_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_MAGENTA_METAL_SIGN = ITEMS.register("one_line_magenta_metal_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ONE_LINE_MAGENTA_METAL_SIGN.get(), ModBlocks.ONE_LINE_MAGENTA_METAL_WALL_SIGN.get()));
-    public static final RegistryObject<Item> ONE_LINE_MAGENTA_METAL_HANGING_SIGN = ITEMS.register("one_line_magenta_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_MAGENTA_METAL_HANGING_SIGN = ITEMS.register("one_line_magenta_metal_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ONE_LINE_MAGENTA_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_MAGENTA_METAL_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> ONE_LINE_ORANGE_METAL_SIGN = ITEMS.register("one_line_orange_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_ORANGE_METAL_SIGN = ITEMS.register("one_line_orange_metal_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ONE_LINE_ORANGE_METAL_SIGN.get(), ModBlocks.ONE_LINE_ORANGE_METAL_WALL_SIGN.get()));
-    public static final RegistryObject<Item> ONE_LINE_ORANGE_METAL_HANGING_SIGN = ITEMS.register("one_line_orange_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_ORANGE_METAL_HANGING_SIGN = ITEMS.register("one_line_orange_metal_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ONE_LINE_ORANGE_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_ORANGE_METAL_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> ONE_LINE_PINK_METAL_SIGN = ITEMS.register("one_line_pink_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_PINK_METAL_SIGN = ITEMS.register("one_line_pink_metal_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ONE_LINE_PINK_METAL_SIGN.get(), ModBlocks.ONE_LINE_PINK_METAL_WALL_SIGN.get()));
-    public static final RegistryObject<Item> ONE_LINE_PINK_METAL_HANGING_SIGN = ITEMS.register("one_line_pink_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_PINK_METAL_HANGING_SIGN = ITEMS.register("one_line_pink_metal_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ONE_LINE_PINK_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_PINK_METAL_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> ONE_LINE_PURPLE_METAL_SIGN = ITEMS.register("one_line_purple_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_PURPLE_METAL_SIGN = ITEMS.register("one_line_purple_metal_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ONE_LINE_PURPLE_METAL_SIGN.get(), ModBlocks.ONE_LINE_PURPLE_METAL_WALL_SIGN.get()));
-    public static final RegistryObject<Item> ONE_LINE_PURPLE_METAL_HANGING_SIGN = ITEMS.register("one_line_purple_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_PURPLE_METAL_HANGING_SIGN = ITEMS.register("one_line_purple_metal_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ONE_LINE_PURPLE_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_PURPLE_METAL_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> ONE_LINE_RED_METAL_SIGN = ITEMS.register("one_line_red_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_RED_METAL_SIGN = ITEMS.register("one_line_red_metal_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ONE_LINE_RED_METAL_SIGN.get(), ModBlocks.ONE_LINE_RED_METAL_WALL_SIGN.get()));
-    public static final RegistryObject<Item> ONE_LINE_RED_METAL_HANGING_SIGN = ITEMS.register("one_line_red_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_RED_METAL_HANGING_SIGN = ITEMS.register("one_line_red_metal_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ONE_LINE_RED_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_RED_METAL_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> ONE_LINE_WHITE_METAL_SIGN = ITEMS.register("one_line_white_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_WHITE_METAL_SIGN = ITEMS.register("one_line_white_metal_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ONE_LINE_WHITE_METAL_SIGN.get(), ModBlocks.ONE_LINE_WHITE_METAL_WALL_SIGN.get()));
-    public static final RegistryObject<Item> ONE_LINE_WHITE_METAL_HANGING_SIGN = ITEMS.register("one_line_white_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_WHITE_METAL_HANGING_SIGN = ITEMS.register("one_line_white_metal_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ONE_LINE_WHITE_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_WHITE_METAL_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> ONE_LINE_YELLOW_METAL_SIGN = ITEMS.register("one_line_yellow_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_YELLOW_METAL_SIGN = ITEMS.register("one_line_yellow_metal_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ONE_LINE_YELLOW_METAL_SIGN.get(), ModBlocks.ONE_LINE_YELLOW_METAL_WALL_SIGN.get()));
-    public static final RegistryObject<Item> ONE_LINE_YELLOW_METAL_HANGING_SIGN = ITEMS.register("one_line_yellow_metalsign",
+    public static final RegistryObject<Item> ONE_LINE_YELLOW_METAL_HANGING_SIGN = ITEMS.register("one_line_yellow_metal_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ONE_LINE_YELLOW_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_YELLOW_METAL_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static void register(IEventBus eventBus) {
