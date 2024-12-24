@@ -33,6 +33,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ONE_LINE_WARPED_SIGN.get());
 
                         pOutput.accept(ModItems.ONE_LINE_BLACK_METAL_SIGN.get());
+                        pOutput.accept(ModItems.ONE_LINE_BLUE_METAL_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_BROWN_METAL_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_CREAM_METAL_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_CYAN_METAL_SIGN.get());
@@ -51,7 +52,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ONE_LINE_RED_METAL_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_WHITE_METAL_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_YELLOW_METAL_SIGN.get());
-                        pOutput.accept(ModItems.ONE_LINE_BLUE_METAL_SIGN.get());
 
                         // add one-line hanging sign items
                         pOutput.accept(ModItems.ONE_LINE_OAK_HANGING_SIGN.get());
@@ -67,6 +67,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ONE_LINE_WARPED_HANGING_SIGN.get());
 
                         pOutput.accept(ModItems.ONE_LINE_BLACK_METAL_HANGING_SIGN.get());
+                        pOutput.accept(ModItems.ONE_LINE_BLUE_METAL_HANGING_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_BROWN_METAL_HANGING_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_CREAM_METAL_HANGING_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_CYAN_METAL_HANGING_SIGN.get());
@@ -85,7 +86,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ONE_LINE_RED_METAL_HANGING_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_WHITE_METAL_HANGING_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_YELLOW_METAL_HANGING_SIGN.get());
-                        pOutput.accept(ModItems.ONE_LINE_BLUE_METAL_HANGING_SIGN.get());
 
                     })
                     .build());
