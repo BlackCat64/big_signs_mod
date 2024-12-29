@@ -32,10 +32,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ONE_LINE_CRIMSON_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_WARPED_SIGN.get());
 
-                        pOutput.accept(ModItems.ONE_LINE_BLACK_METAL_SIGN.get());
-                        pOutput.accept(ModItems.ONE_LINE_GRAY_METAL_SIGN.get());
-                        pOutput.accept(ModItems.ONE_LINE_LIGHT_GRAY_METAL_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_WHITE_METAL_SIGN.get());
+                        pOutput.accept(ModItems.ONE_LINE_LIGHT_GRAY_METAL_SIGN.get());
+                        pOutput.accept(ModItems.ONE_LINE_GRAY_METAL_SIGN.get());
+                        pOutput.accept(ModItems.ONE_LINE_BLACK_METAL_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_DARK_RED_METAL_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_RED_METAL_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_DARK_PINK_METAL_SIGN.get());
@@ -66,10 +66,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ONE_LINE_CRIMSON_HANGING_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_WARPED_HANGING_SIGN.get());
 
-                        pOutput.accept(ModItems.ONE_LINE_BLACK_METAL_HANGING_SIGN.get());
-                        pOutput.accept(ModItems.ONE_LINE_GRAY_METAL_HANGING_SIGN.get());
-                        pOutput.accept(ModItems.ONE_LINE_LIGHT_GRAY_METAL_HANGING_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_WHITE_METAL_HANGING_SIGN.get());
+                        pOutput.accept(ModItems.ONE_LINE_LIGHT_GRAY_METAL_HANGING_SIGN.get());
+                        pOutput.accept(ModItems.ONE_LINE_GRAY_METAL_HANGING_SIGN.get());
+                        pOutput.accept(ModItems.ONE_LINE_BLACK_METAL_HANGING_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_DARK_RED_METAL_HANGING_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_RED_METAL_HANGING_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_DARK_PINK_METAL_HANGING_SIGN.get());
