@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "metal_sign_dyeing",
+  "ingredients": [
+    {
+      "tag": "big_signs:metal_signs"
+    },
+    {
+      "item": "minecraft:brown_dye"
+    },
+    {
+      "item": "minecraft:orange_dye"
+    }
+  ],
+  "result": {
+    "item": "big_signs:one_line_dark_orange_metal_sign",
+    "count": 1
+  }
+}

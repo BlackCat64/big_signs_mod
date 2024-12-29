@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iii",
+    "iii",
+    " I "
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "I": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "result": {
+    "item": "big_signs:one_line_white_metal_sign",
+    "count": 6
+  },
+  "group": "metal_sign"
+}
