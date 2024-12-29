@@ -7,6 +7,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -119,7 +120,7 @@ public class ModBlocks {
             () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_WALL_HANGING_SIGN), WoodType.WARPED));
 
     public static final RegistryObject<Block> ONE_LINE_BLACK_METAL_SIGN = BLOCKS.register("one_line_black_metal_sign",
-            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.BLACK_METAL_SIGN));
+            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).explosionResistance(6).destroyTime(2), ModWoodTypes.BLACK_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_BLACK_METAL_WALL_SIGN = BLOCKS.register("one_line_black_metal_wall_sign",
             () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.BLACK_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_BLACK_METAL_HANGING_SIGN = BLOCKS.register("one_line_black_metal_hanging_sign",
