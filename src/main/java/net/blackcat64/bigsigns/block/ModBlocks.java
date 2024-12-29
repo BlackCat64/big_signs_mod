@@ -18,6 +18,18 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.function.Supplier;
 
 public class ModBlocks {
+    public static final BlockBehaviour.Properties METAL_SIGN_PROPERTIES =
+            BlockBehaviour.Properties.copy(Blocks.OAK_SIGN)
+                    .explosionResistance(6).destroyTime(2);
+    public static final BlockBehaviour.Properties METAL_WALL_SIGN_PROPERTIES =
+            BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN)
+                    .explosionResistance(6).destroyTime(2);
+    public static final BlockBehaviour.Properties METAL_HANGING_SIGN_PROPERTIES =
+            BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN)
+                    .explosionResistance(6).destroyTime(2);
+    public static final BlockBehaviour.Properties METAL_WALL_HANGING_SIGN_PROPERTIES =
+            BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN)
+                    .explosionResistance(6).destroyTime(2);
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, BigSignsMod.MOD_ID);
 
     public static final RegistryObject<Block> ONE_LINE_OAK_SIGN = BLOCKS.register("one_line_oak_sign",
@@ -120,184 +132,184 @@ public class ModBlocks {
             () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_WALL_HANGING_SIGN), WoodType.WARPED));
 
     public static final RegistryObject<Block> ONE_LINE_BLACK_METAL_SIGN = BLOCKS.register("one_line_black_metal_sign",
-            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).explosionResistance(6).destroyTime(2), ModWoodTypes.BLACK_METAL_SIGN));
+            () -> new OneLineSignBlock(METAL_SIGN_PROPERTIES, ModWoodTypes.BLACK_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_BLACK_METAL_WALL_SIGN = BLOCKS.register("one_line_black_metal_wall_sign",
-            () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.BLACK_METAL_SIGN));
+            () -> new OneLineWallSignBlock(METAL_WALL_SIGN_PROPERTIES.explosionResistance(6).destroyTime(2), ModWoodTypes.BLACK_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_BLACK_METAL_HANGING_SIGN = BLOCKS.register("one_line_black_metal_hanging_sign",
-            () -> new OneLineHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.BLACK_METAL_SIGN));
+            () -> new OneLineHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES.explosionResistance(6).destroyTime(2), ModWoodTypes.BLACK_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_BLACK_METAL_WALL_HANGING_SIGN = BLOCKS.register("one_line_black_metal_wall_hanging_sign",
-            () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.BLACK_METAL_SIGN));
+            () -> new OneLineWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES.explosionResistance(6).destroyTime(2), ModWoodTypes.BLACK_METAL_SIGN));
 
     public static final RegistryObject<Block> ONE_LINE_BLUE_METAL_SIGN = BLOCKS.register("one_line_blue_metal_sign",
-            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.BLUE_METAL_SIGN));
+            () -> new OneLineSignBlock(METAL_SIGN_PROPERTIES.explosionResistance(6).destroyTime(2), ModWoodTypes.BLUE_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_BLUE_METAL_WALL_SIGN = BLOCKS.register("one_line_blue_metal_wall_sign",
-            () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.BLUE_METAL_SIGN));
+            () -> new OneLineWallSignBlock(METAL_WALL_SIGN_PROPERTIES.explosionResistance(6).destroyTime(2), ModWoodTypes.BLUE_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_BLUE_METAL_HANGING_SIGN = BLOCKS.register("one_line_blue_metal_hanging_sign",
-            () -> new OneLineHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.BLUE_METAL_SIGN));
+            () -> new OneLineHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES.explosionResistance(6).destroyTime(2), ModWoodTypes.BLUE_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_BLUE_METAL_WALL_HANGING_SIGN = BLOCKS.register("one_line_blue_metal_wall_hanging_sign",
-            () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.BLUE_METAL_SIGN));
+            () -> new OneLineWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES.explosionResistance(6).destroyTime(2), ModWoodTypes.BLUE_METAL_SIGN));
 
     public static final RegistryObject<Block> ONE_LINE_BROWN_METAL_SIGN = BLOCKS.register("one_line_brown_metal_sign",
-            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.BROWN_METAL_SIGN));
+            () -> new OneLineSignBlock(METAL_SIGN_PROPERTIES.explosionResistance(6).destroyTime(2), ModWoodTypes.BROWN_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_BROWN_METAL_WALL_SIGN = BLOCKS.register("one_line_brown_metal_wall_sign",
-            () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.BROWN_METAL_SIGN));
+            () -> new OneLineWallSignBlock(METAL_WALL_SIGN_PROPERTIES.explosionResistance(6).destroyTime(2), ModWoodTypes.BROWN_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_BROWN_METAL_HANGING_SIGN = BLOCKS.register("one_line_brown_metal_hanging_sign",
-            () -> new OneLineHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.BROWN_METAL_SIGN));
+            () -> new OneLineHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES.explosionResistance(6).destroyTime(2), ModWoodTypes.BROWN_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_BROWN_METAL_WALL_HANGING_SIGN = BLOCKS.register("one_line_brown_metal_wall_hanging_sign",
-            () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.BROWN_METAL_SIGN));
+            () -> new OneLineWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES.explosionResistance(6).destroyTime(2), ModWoodTypes.BROWN_METAL_SIGN));
 
     public static final RegistryObject<Block> ONE_LINE_CREAM_METAL_SIGN = BLOCKS.register("one_line_cream_metal_sign",
-            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.CREAM_METAL_SIGN));
+            () -> new OneLineSignBlock(METAL_SIGN_PROPERTIES, ModWoodTypes.CREAM_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_CREAM_METAL_WALL_SIGN = BLOCKS.register("one_line_cream_metal_wall_sign",
-            () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.CREAM_METAL_SIGN));
+            () -> new OneLineWallSignBlock(METAL_WALL_SIGN_PROPERTIES, ModWoodTypes.CREAM_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_CREAM_METAL_HANGING_SIGN = BLOCKS.register("one_line_cream_metal_hanging_sign",
-            () -> new OneLineHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.CREAM_METAL_SIGN));
+            () -> new OneLineHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, ModWoodTypes.CREAM_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_CREAM_METAL_WALL_HANGING_SIGN = BLOCKS.register("one_line_cream_metal_wall_hanging_sign",
-            () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.CREAM_METAL_SIGN));
+            () -> new OneLineWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, ModWoodTypes.CREAM_METAL_SIGN));
 
     public static final RegistryObject<Block> ONE_LINE_CYAN_METAL_SIGN = BLOCKS.register("one_line_cyan_metal_sign",
-            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.CYAN_METAL_SIGN));
+            () -> new OneLineSignBlock(METAL_SIGN_PROPERTIES, ModWoodTypes.CYAN_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_CYAN_METAL_WALL_SIGN = BLOCKS.register("one_line_cyan_metal_wall_sign",
-            () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.CYAN_METAL_SIGN));
+            () -> new OneLineWallSignBlock(METAL_WALL_SIGN_PROPERTIES, ModWoodTypes.CYAN_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_CYAN_METAL_HANGING_SIGN = BLOCKS.register("one_line_cyan_metal_hanging_sign",
-            () -> new OneLineHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.CYAN_METAL_SIGN));
+            () -> new OneLineHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, ModWoodTypes.CYAN_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_CYAN_METAL_WALL_HANGING_SIGN = BLOCKS.register("one_line_cyan_metal_wall_hanging_sign",
-            () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.CYAN_METAL_SIGN));
+            () -> new OneLineWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, ModWoodTypes.CYAN_METAL_SIGN));
 
     public static final RegistryObject<Block> ONE_LINE_DARK_ORANGE_METAL_SIGN = BLOCKS.register("one_line_dark_orange_metal_sign",
-            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.DARK_ORANGE_METAL_SIGN));
+            () -> new OneLineSignBlock(METAL_SIGN_PROPERTIES, ModWoodTypes.DARK_ORANGE_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_DARK_ORANGE_METAL_WALL_SIGN = BLOCKS.register("one_line_dark_orange_metal_wall_sign",
-            () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.DARK_ORANGE_METAL_SIGN));
+            () -> new OneLineWallSignBlock(METAL_WALL_SIGN_PROPERTIES, ModWoodTypes.DARK_ORANGE_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_DARK_ORANGE_METAL_HANGING_SIGN = BLOCKS.register("one_line_dark_orange_metal_hanging_sign",
-            () -> new OneLineHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.DARK_ORANGE_METAL_SIGN));
+            () -> new OneLineHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, ModWoodTypes.DARK_ORANGE_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_DARK_ORANGE_METAL_WALL_HANGING_SIGN = BLOCKS.register("one_line_dark_orange_metal_wall_hanging_sign",
-            () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.DARK_ORANGE_METAL_SIGN));
+            () -> new OneLineWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, ModWoodTypes.DARK_ORANGE_METAL_SIGN));
 
     public static final RegistryObject<Block> ONE_LINE_DARK_PINK_METAL_SIGN = BLOCKS.register("one_line_dark_pink_metal_sign",
-            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.DARK_PINK_METAL_SIGN));
+            () -> new OneLineSignBlock(METAL_SIGN_PROPERTIES, ModWoodTypes.DARK_PINK_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_DARK_PINK_METAL_WALL_SIGN = BLOCKS.register("one_line_dark_pink_metal_wall_sign",
-            () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.DARK_PINK_METAL_SIGN));
+            () -> new OneLineWallSignBlock(METAL_WALL_SIGN_PROPERTIES, ModWoodTypes.DARK_PINK_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_DARK_PINK_METAL_HANGING_SIGN = BLOCKS.register("one_line_dark_pink_metal_hanging_sign",
-            () -> new OneLineHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.DARK_PINK_METAL_SIGN));
+            () -> new OneLineHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, ModWoodTypes.DARK_PINK_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_DARK_PINK_METAL_WALL_HANGING_SIGN = BLOCKS.register("one_line_dark_pink_metal_wall_hanging_sign",
-            () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.DARK_PINK_METAL_SIGN));
+            () -> new OneLineWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, ModWoodTypes.DARK_PINK_METAL_SIGN));
 
     public static final RegistryObject<Block> ONE_LINE_DARK_RED_METAL_SIGN = BLOCKS.register("one_line_dark_red_metal_sign",
-            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.DARK_RED_METAL_SIGN));
+            () -> new OneLineSignBlock(METAL_SIGN_PROPERTIES, ModWoodTypes.DARK_RED_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_DARK_RED_METAL_WALL_SIGN = BLOCKS.register("one_line_dark_red_metal_wall_sign",
-            () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.DARK_RED_METAL_SIGN));
+            () -> new OneLineWallSignBlock(METAL_WALL_SIGN_PROPERTIES, ModWoodTypes.DARK_RED_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_DARK_RED_METAL_HANGING_SIGN = BLOCKS.register("one_line_dark_red_metal_hanging_sign",
-            () -> new OneLineHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.DARK_RED_METAL_SIGN));
+            () -> new OneLineHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, ModWoodTypes.DARK_RED_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_DARK_RED_METAL_WALL_HANGING_SIGN = BLOCKS.register("one_line_dark_red_metal_wall_hanging_sign",
-            () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.DARK_RED_METAL_SIGN));
+            () -> new OneLineWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, ModWoodTypes.DARK_RED_METAL_SIGN));
 
     public static final RegistryObject<Block> ONE_LINE_GRAY_METAL_SIGN = BLOCKS.register("one_line_gray_metal_sign",
-            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.GRAY_METAL_SIGN));
+            () -> new OneLineSignBlock(METAL_SIGN_PROPERTIES, ModWoodTypes.GRAY_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_GRAY_METAL_WALL_SIGN = BLOCKS.register("one_line_gray_metal_wall_sign",
-            () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.GRAY_METAL_SIGN));
+            () -> new OneLineWallSignBlock(METAL_WALL_SIGN_PROPERTIES, ModWoodTypes.GRAY_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_GRAY_METAL_HANGING_SIGN = BLOCKS.register("one_line_gray_metal_hanging_sign",
-            () -> new OneLineHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.GRAY_METAL_SIGN));
+            () -> new OneLineHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, ModWoodTypes.GRAY_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_GRAY_METAL_WALL_HANGING_SIGN = BLOCKS.register("one_line_gray_metal_wall_hanging_sign",
-            () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.GRAY_METAL_SIGN));
+            () -> new OneLineWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, ModWoodTypes.GRAY_METAL_SIGN));
 
     public static final RegistryObject<Block> ONE_LINE_GREEN_METAL_SIGN = BLOCKS.register("one_line_green_metal_sign",
-            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.GREEN_METAL_SIGN));
+            () -> new OneLineSignBlock(METAL_SIGN_PROPERTIES, ModWoodTypes.GREEN_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_GREEN_METAL_WALL_SIGN = BLOCKS.register("one_line_green_metal_wall_sign",
-            () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.GREEN_METAL_SIGN));
+            () -> new OneLineWallSignBlock(METAL_WALL_SIGN_PROPERTIES, ModWoodTypes.GREEN_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_GREEN_METAL_HANGING_SIGN = BLOCKS.register("one_line_green_metal_hanging_sign",
-            () -> new OneLineHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.GREEN_METAL_SIGN));
+            () -> new OneLineHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, ModWoodTypes.GREEN_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_GREEN_METAL_WALL_HANGING_SIGN = BLOCKS.register("one_line_green_metal_wall_hanging_sign",
-            () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.GREEN_METAL_SIGN));
+            () -> new OneLineWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, ModWoodTypes.GREEN_METAL_SIGN));
 
     public static final RegistryObject<Block> ONE_LINE_LIGHT_BLUE_METAL_SIGN = BLOCKS.register("one_line_light_blue_metal_sign",
-            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.LIGHT_BLUE_METAL_SIGN));
+            () -> new OneLineSignBlock(METAL_SIGN_PROPERTIES, ModWoodTypes.LIGHT_BLUE_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_LIGHT_BLUE_METAL_WALL_SIGN = BLOCKS.register("one_line_light_blue_metal_wall_sign",
-            () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.LIGHT_BLUE_METAL_SIGN));
+            () -> new OneLineWallSignBlock(METAL_WALL_SIGN_PROPERTIES, ModWoodTypes.LIGHT_BLUE_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_LIGHT_BLUE_METAL_HANGING_SIGN = BLOCKS.register("one_line_light_blue_metal_hanging_sign",
-            () -> new OneLineHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.LIGHT_BLUE_METAL_SIGN));
+            () -> new OneLineHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, ModWoodTypes.LIGHT_BLUE_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_LIGHT_BLUE_METAL_WALL_HANGING_SIGN = BLOCKS.register("one_line_light_blue_metal_wall_hanging_sign",
-            () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.LIGHT_BLUE_METAL_SIGN));
+            () -> new OneLineWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, ModWoodTypes.LIGHT_BLUE_METAL_SIGN));
 
     public static final RegistryObject<Block> ONE_LINE_LIGHT_GRAY_METAL_SIGN = BLOCKS.register("one_line_light_gray_metal_sign",
-            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.LIGHT_GRAY_METAL_SIGN));
+            () -> new OneLineSignBlock(METAL_SIGN_PROPERTIES, ModWoodTypes.LIGHT_GRAY_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_LIGHT_GRAY_METAL_WALL_SIGN = BLOCKS.register("one_line_light_gray_metal_wall_sign",
-            () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.LIGHT_GRAY_METAL_SIGN));
+            () -> new OneLineWallSignBlock(METAL_WALL_SIGN_PROPERTIES, ModWoodTypes.LIGHT_GRAY_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_LIGHT_GRAY_METAL_HANGING_SIGN = BLOCKS.register("one_line_light_gray_metal_hanging_sign",
-            () -> new OneLineHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.LIGHT_GRAY_METAL_SIGN));
+            () -> new OneLineHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, ModWoodTypes.LIGHT_GRAY_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_LIGHT_GRAY_METAL_WALL_HANGING_SIGN = BLOCKS.register("one_line_light_gray_metal_wall_hanging_sign",
-            () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.LIGHT_GRAY_METAL_SIGN));
+            () -> new OneLineWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, ModWoodTypes.LIGHT_GRAY_METAL_SIGN));
 
     public static final RegistryObject<Block> ONE_LINE_LIME_METAL_SIGN = BLOCKS.register("one_line_lime_metal_sign",
-            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.LIME_METAL_SIGN));
+            () -> new OneLineSignBlock(METAL_SIGN_PROPERTIES, ModWoodTypes.LIME_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_LIME_METAL_WALL_SIGN = BLOCKS.register("one_line_lime_metal_wall_sign",
-            () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.LIME_METAL_SIGN));
+            () -> new OneLineWallSignBlock(METAL_WALL_SIGN_PROPERTIES, ModWoodTypes.LIME_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_LIME_METAL_HANGING_SIGN = BLOCKS.register("one_line_lime_metal_hanging_sign",
-            () -> new OneLineHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.LIME_METAL_SIGN));
+            () -> new OneLineHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, ModWoodTypes.LIME_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_LIME_METAL_WALL_HANGING_SIGN = BLOCKS.register("one_line_lime_metal_wall_hanging_sign",
-            () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.LIME_METAL_SIGN));
+            () -> new OneLineWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, ModWoodTypes.LIME_METAL_SIGN));
 
     public static final RegistryObject<Block> ONE_LINE_MAGENTA_METAL_SIGN = BLOCKS.register("one_line_magenta_metal_sign",
-            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.MAGENTA_METAL_SIGN));
+            () -> new OneLineSignBlock(METAL_SIGN_PROPERTIES, ModWoodTypes.MAGENTA_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_MAGENTA_METAL_WALL_SIGN = BLOCKS.register("one_line_magenta_metal_wall_sign",
-            () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.MAGENTA_METAL_SIGN));
+            () -> new OneLineWallSignBlock(METAL_WALL_SIGN_PROPERTIES, ModWoodTypes.MAGENTA_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_MAGENTA_METAL_HANGING_SIGN = BLOCKS.register("one_line_magenta_metal_hanging_sign",
-            () -> new OneLineHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.MAGENTA_METAL_SIGN));
+            () -> new OneLineHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, ModWoodTypes.MAGENTA_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_MAGENTA_METAL_WALL_HANGING_SIGN = BLOCKS.register("one_line_magenta_metal_wall_hanging_sign",
-            () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.MAGENTA_METAL_SIGN));
+            () -> new OneLineWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, ModWoodTypes.MAGENTA_METAL_SIGN));
 
     public static final RegistryObject<Block> ONE_LINE_ORANGE_METAL_SIGN = BLOCKS.register("one_line_orange_metal_sign",
-            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.ORANGE_METAL_SIGN));
+            () -> new OneLineSignBlock(METAL_SIGN_PROPERTIES, ModWoodTypes.ORANGE_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_ORANGE_METAL_WALL_SIGN = BLOCKS.register("one_line_orange_metal_wall_sign",
-            () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.ORANGE_METAL_SIGN));
+            () -> new OneLineWallSignBlock(METAL_WALL_SIGN_PROPERTIES, ModWoodTypes.ORANGE_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_ORANGE_METAL_HANGING_SIGN = BLOCKS.register("one_line_orange_metal_hanging_sign",
-            () -> new OneLineHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.ORANGE_METAL_SIGN));
+            () -> new OneLineHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, ModWoodTypes.ORANGE_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_ORANGE_METAL_WALL_HANGING_SIGN = BLOCKS.register("one_line_orange_metal_wall_hanging_sign",
-            () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.ORANGE_METAL_SIGN));
+            () -> new OneLineWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, ModWoodTypes.ORANGE_METAL_SIGN));
 
     public static final RegistryObject<Block> ONE_LINE_PINK_METAL_SIGN = BLOCKS.register("one_line_pink_metal_sign",
-            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.PINK_METAL_SIGN));
+            () -> new OneLineSignBlock(METAL_SIGN_PROPERTIES, ModWoodTypes.PINK_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_PINK_METAL_WALL_SIGN = BLOCKS.register("one_line_pink_metal_wall_sign",
-            () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.PINK_METAL_SIGN));
+            () -> new OneLineWallSignBlock(METAL_WALL_SIGN_PROPERTIES, ModWoodTypes.PINK_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_PINK_METAL_HANGING_SIGN = BLOCKS.register("one_line_pink_metal_hanging_sign",
-            () -> new OneLineHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.PINK_METAL_SIGN));
+            () -> new OneLineHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, ModWoodTypes.PINK_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_PINK_METAL_WALL_HANGING_SIGN = BLOCKS.register("one_line_pink_metal_wall_hanging_sign",
-            () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.PINK_METAL_SIGN));
+            () -> new OneLineWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, ModWoodTypes.PINK_METAL_SIGN));
 
     public static final RegistryObject<Block> ONE_LINE_PURPLE_METAL_SIGN = BLOCKS.register("one_line_purple_metal_sign",
-            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.PURPLE_METAL_SIGN));
+            () -> new OneLineSignBlock(METAL_SIGN_PROPERTIES, ModWoodTypes.PURPLE_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_PURPLE_METAL_WALL_SIGN = BLOCKS.register("one_line_purple_metal_wall_sign",
-            () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.PURPLE_METAL_SIGN));
+            () -> new OneLineWallSignBlock(METAL_WALL_SIGN_PROPERTIES, ModWoodTypes.PURPLE_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_PURPLE_METAL_HANGING_SIGN = BLOCKS.register("one_line_purple_metal_hanging_sign",
-            () -> new OneLineHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.PURPLE_METAL_SIGN));
+            () -> new OneLineHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, ModWoodTypes.PURPLE_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_PURPLE_METAL_WALL_HANGING_SIGN = BLOCKS.register("one_line_purple_metal_wall_hanging_sign",
-            () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.PURPLE_METAL_SIGN));
+            () -> new OneLineWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, ModWoodTypes.PURPLE_METAL_SIGN));
 
     public static final RegistryObject<Block> ONE_LINE_RED_METAL_SIGN = BLOCKS.register("one_line_red_metal_sign",
-            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.RED_METAL_SIGN));
+            () -> new OneLineSignBlock(METAL_SIGN_PROPERTIES, ModWoodTypes.RED_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_RED_METAL_WALL_SIGN = BLOCKS.register("one_line_red_metal_wall_sign",
-            () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.RED_METAL_SIGN));
+            () -> new OneLineWallSignBlock(METAL_WALL_SIGN_PROPERTIES, ModWoodTypes.RED_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_RED_METAL_HANGING_SIGN = BLOCKS.register("one_line_red_metal_hanging_sign",
-            () -> new OneLineHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.RED_METAL_SIGN));
+            () -> new OneLineHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, ModWoodTypes.RED_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_RED_METAL_WALL_HANGING_SIGN = BLOCKS.register("one_line_red_metal_wall_hanging_sign",
-            () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.RED_METAL_SIGN));
+            () -> new OneLineWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, ModWoodTypes.RED_METAL_SIGN));
 
     public static final RegistryObject<Block> ONE_LINE_WHITE_METAL_SIGN = BLOCKS.register("one_line_white_metal_sign",
-            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.WHITE_METAL_SIGN));
+            () -> new OneLineSignBlock(METAL_SIGN_PROPERTIES, ModWoodTypes.WHITE_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_WHITE_METAL_WALL_SIGN = BLOCKS.register("one_line_white_metal_wall_sign",
-            () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.WHITE_METAL_SIGN));
+            () -> new OneLineWallSignBlock(METAL_WALL_SIGN_PROPERTIES, ModWoodTypes.WHITE_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_WHITE_METAL_HANGING_SIGN = BLOCKS.register("one_line_white_metal_hanging_sign",
-            () -> new OneLineHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.WHITE_METAL_SIGN));
+            () -> new OneLineHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, ModWoodTypes.WHITE_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_WHITE_METAL_WALL_HANGING_SIGN = BLOCKS.register("one_line_white_metal_wall_hanging_sign",
-            () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.WHITE_METAL_SIGN));
+            () -> new OneLineWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, ModWoodTypes.WHITE_METAL_SIGN));
 
     public static final RegistryObject<Block> ONE_LINE_YELLOW_METAL_SIGN = BLOCKS.register("one_line_yellow_metal_sign",
-            () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.YELLOW_METAL_SIGN));
+            () -> new OneLineSignBlock(METAL_SIGN_PROPERTIES, ModWoodTypes.YELLOW_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_YELLOW_METAL_WALL_SIGN = BLOCKS.register("one_line_yellow_metal_wall_sign",
-            () -> new OneLineWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.YELLOW_METAL_SIGN));
+            () -> new OneLineWallSignBlock(METAL_WALL_SIGN_PROPERTIES, ModWoodTypes.YELLOW_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_YELLOW_METAL_HANGING_SIGN = BLOCKS.register("one_line_yellow_metal_hanging_sign",
-            () -> new OneLineHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.YELLOW_METAL_SIGN));
+            () -> new OneLineHangingSignBlock(METAL_HANGING_SIGN_PROPERTIES, ModWoodTypes.YELLOW_METAL_SIGN));
     public static final RegistryObject<Block> ONE_LINE_YELLOW_METAL_WALL_HANGING_SIGN = BLOCKS.register("one_line_yellow_metal_wall_hanging_sign",
-            () -> new OneLineWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.YELLOW_METAL_SIGN));
+            () -> new OneLineWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, ModWoodTypes.YELLOW_METAL_SIGN));
 
 
 
