@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "metal_hanging_sign_dyeing",
+  "ingredients": [
+    {
+      "tag": "big_signs:metal_hanging_signs"
+    },
+    {
+      "item": "minecraft:green_dye"
+    }
+  ],
+  "result": {
+    "item": "big_signs:one_line_green_metal_hanging_sign",
+    "count": 1
+  }
+}
