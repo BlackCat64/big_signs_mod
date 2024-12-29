@@ -12,25 +12,6 @@
     "big_signs:one_line_bamboo_sign",
     "big_signs:one_line_crimson_sign",
     "big_signs:one_line_warped_sign",
-    "big_signs:one_line_black_metal_sign",
-    "big_signs:one_line_blue_metal_sign",
-    "big_signs:one_line_brown_metal_sign",
-    "big_signs:one_line_cream_metal_sign",
-    "big_signs:one_line_cyan_metal_sign",
-    "big_signs:one_line_dark_orange_metal_sign",
-    "big_signs:one_line_dark_pink_metal_sign",
-    "big_signs:one_line_dark_red_metal_sign",
-    "big_signs:one_line_gray_metal_sign",
-    "big_signs:one_line_green_metal_sign",
-    "big_signs:one_line_light_blue_metal_sign",
-    "big_signs:one_line_light_gray_metal_sign",
-    "big_signs:one_line_lime_metal_sign",
-    "big_signs:one_line_magenta_metal_sign",
-    "big_signs:one_line_orange_metal_sign",
-    "big_signs:one_line_pink_metal_sign",
-    "big_signs:one_line_purple_metal_sign",
-    "big_signs:one_line_red_metal_sign",
-    "big_signs:one_line_white_metal_sign",
-    "big_signs:one_line_yellow_metal_sign"
+    "#big_signs:metal_signs"
   ]
 }
