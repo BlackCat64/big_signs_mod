@@ -61,6 +61,24 @@ public class BigSignsMod {
         public static void onClientSetup(FMLClientSetupEvent event) {
             Sheets.addWoodType(ModWoodTypes.BLACK_METAL_SIGN);
             Sheets.addWoodType(ModWoodTypes.GRAY_METAL_SIGN);
+            Sheets.addWoodType(ModWoodTypes.LIGHT_GRAY_METAL_SIGN);
+            Sheets.addWoodType(ModWoodTypes.WHITE_METAL_SIGN);
+            Sheets.addWoodType(ModWoodTypes.DARK_RED_METAL_SIGN);
+            Sheets.addWoodType(ModWoodTypes.RED_METAL_SIGN);
+            Sheets.addWoodType(ModWoodTypes.DARK_PINK_METAL_SIGN);
+            Sheets.addWoodType(ModWoodTypes.PINK_METAL_SIGN);
+            Sheets.addWoodType(ModWoodTypes.MAGENTA_METAL_SIGN);
+            Sheets.addWoodType(ModWoodTypes.PURPLE_METAL_SIGN);
+            Sheets.addWoodType(ModWoodTypes.BLUE_METAL_SIGN);
+            Sheets.addWoodType(ModWoodTypes.CYAN_METAL_SIGN);
+            Sheets.addWoodType(ModWoodTypes.LIGHT_BLUE_METAL_SIGN);
+            Sheets.addWoodType(ModWoodTypes.LIME_METAL_SIGN);
+            Sheets.addWoodType(ModWoodTypes.GREEN_METAL_SIGN);
+            Sheets.addWoodType(ModWoodTypes.BROWN_METAL_SIGN);
+            Sheets.addWoodType(ModWoodTypes.DARK_ORANGE_METAL_SIGN);
+            Sheets.addWoodType(ModWoodTypes.ORANGE_METAL_SIGN);
+            Sheets.addWoodType(ModWoodTypes.YELLOW_METAL_SIGN);
+            Sheets.addWoodType(ModWoodTypes.CREAM_METAL_SIGN);
         }
     }
 }
