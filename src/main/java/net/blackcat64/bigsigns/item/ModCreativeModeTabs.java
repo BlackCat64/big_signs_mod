@@ -19,7 +19,9 @@ public class ModCreativeModeTabs {
                     .icon(() -> new ItemStack(ModItems.ONE_LINE_OAK_SIGN.get()))
                     .title(Component.translatable("creativetab.signs_tab"))
                     .displayItems((pParameters, pOutput) -> {
-                        // add one-line sign items
+                        /*
+                        *   ONE-LINE SIGN ITEMS
+                         */
                         pOutput.accept(ModItems.ONE_LINE_OAK_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_SPRUCE_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_BIRCH_SIGN.get());
@@ -53,7 +55,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ONE_LINE_YELLOW_METAL_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_CREAM_METAL_SIGN.get());
 
-                        // add one-line hanging sign items
                         pOutput.accept(ModItems.ONE_LINE_OAK_HANGING_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_SPRUCE_HANGING_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_BIRCH_HANGING_SIGN.get());
@@ -87,6 +88,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ONE_LINE_YELLOW_METAL_HANGING_SIGN.get());
                         pOutput.accept(ModItems.ONE_LINE_CREAM_METAL_HANGING_SIGN.get());
 
+
+                        /*
+                        *   THIN SIGN ITEMS
+                         */
+                        pOutput.accept(ModItems.THIN_OAK_SIGN.get());
                     })
                     .build());
 

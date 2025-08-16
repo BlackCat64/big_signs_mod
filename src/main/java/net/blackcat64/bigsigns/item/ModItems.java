@@ -13,6 +13,9 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, BigSignsMod.MOD_ID);
 
+    /*
+     *  ONE-LINE SIGN ITEMS
+     */
     public static final RegistryObject<Item> ONE_LINE_OAK_SIGN = ITEMS.register("one_line_oak_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ONE_LINE_OAK_SIGN.get(), ModBlocks.ONE_LINE_OAK_WALL_SIGN.get()));
     public static final RegistryObject<Item> ONE_LINE_OAK_HANGING_SIGN = ITEMS.register("one_line_oak_hanging_sign",
@@ -167,6 +170,13 @@ public class ModItems {
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.ONE_LINE_YELLOW_METAL_SIGN.get(), ModBlocks.ONE_LINE_YELLOW_METAL_WALL_SIGN.get()));
     public static final RegistryObject<Item> ONE_LINE_YELLOW_METAL_HANGING_SIGN = ITEMS.register("one_line_yellow_metal_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ONE_LINE_YELLOW_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_YELLOW_METAL_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+
+    /*
+    *   THIN SIGN ITEMS
+     */
+    public static final RegistryObject<Item> THIN_OAK_SIGN = ITEMS.register("thin_oak_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.THIN_SIGN.get(), ModBlocks.THIN_SIGN.get()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

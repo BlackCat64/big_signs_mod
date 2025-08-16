@@ -18,6 +18,9 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.function.Supplier;
 
 public class ModBlocks {
+    /*
+    *   METAL SIGN BLOCK PROPERTIES
+     */
     public static final BlockBehaviour.Properties METAL_SIGN_PROPERTIES =
             BlockBehaviour.Properties.copy(Blocks.OAK_SIGN)
                     .explosionResistance(6).destroyTime(2);
@@ -32,6 +35,9 @@ public class ModBlocks {
                     .explosionResistance(6).destroyTime(2);
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, BigSignsMod.MOD_ID);
 
+    /*
+    *   ONE-LINE SIGN BLOCKS
+     */
     public static final RegistryObject<Block> ONE_LINE_OAK_SIGN = BLOCKS.register("one_line_oak_sign",
             () -> new OneLineSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), WoodType.OAK));
     public static final RegistryObject<Block> ONE_LINE_OAK_WALL_SIGN = BLOCKS.register("one_line_oak_wall_sign",
@@ -311,7 +317,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> ONE_LINE_YELLOW_METAL_WALL_HANGING_SIGN = BLOCKS.register("one_line_yellow_metal_wall_hanging_sign",
             () -> new OneLineWallHangingSignBlock(METAL_WALL_HANGING_SIGN_PROPERTIES, ModWoodTypes.YELLOW_METAL_SIGN));
 
-
+    /*
+    *   THIN SIGNS
+     */
+    public static final RegistryObject<Block> THIN_SIGN = BLOCKS.register("thin_sign",
+            () -> new ThinSignBlock(METAL_WALL_SIGN_PROPERTIES, ModWoodTypes.BLACK_METAL_SIGN));
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));

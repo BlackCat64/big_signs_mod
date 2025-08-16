@@ -82,7 +82,9 @@ public class ModBlockEntities {
                             ModBlocks.ONE_LINE_WHITE_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_WHITE_METAL_WALL_HANGING_SIGN.get(),
                             ModBlocks.ONE_LINE_YELLOW_METAL_HANGING_SIGN.get(), ModBlocks.ONE_LINE_YELLOW_METAL_WALL_HANGING_SIGN.get()).build(null));
 
-
+    public static final RegistryObject<BlockEntityType<ThinSignBlockEntity>> THIN_SIGN =
+            BLOCK_ENTITIES.register("thin_sign", () ->
+                    BlockEntityType.Builder.of(ThinSignBlockEntity::new, ModBlocks.THIN_SIGN.get()).build(null));
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);
