@@ -1,5 +1,6 @@
 package net.blackcat64.bigsigns.model;
 
+import net.blackcat64.bigsigns.block.SignVariants;
 import net.blackcat64.bigsigns.block.ThinSignBlock;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.block.model.BakedQuad;
@@ -20,10 +21,16 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
+import java.util.EnumMap;
 import java.util.List;
+import java.util.Map;
 import java.util.function.Function;
 
 public class ThinSignModel implements IUnbakedGeometry<ThinSignModel> {
+
+    private final Map<SignVariants, BakedModel> part1Variants = new EnumMap<>(SignVariants.class);
+    private final Map<SignVariants, BakedModel> part2Variants = new EnumMap<>(SignVariants.class);
+    private final Map<SignVariants, BakedModel> part3Variants = new EnumMap<>(SignVariants.class);
 
     @Override
     public BakedModel bake(IGeometryBakingContext context,
@@ -32,23 +39,34 @@ public class ThinSignModel implements IUnbakedGeometry<ThinSignModel> {
                             ModelState modelState,
                             ItemOverrides overrides,
                             ResourceLocation modelLocation) {
+        for (SignVariants variant : SignVariants.values()) { // compile Maps from sign variant to model file, for each part of the sign
+            part1Variants.put(variant, baker.bake(
+                    new ResourceLocation("big_signs:block/thin_" + variant.getSerializedName() + "_sign_1"),
+                    modelState, spriteGetter));
 
-        BakedModel part1 = baker.bake(new ResourceLocation("big_signs:block/thin_sign_1"), modelState, spriteGetter);
-        BakedModel part2 = baker.bake(new ResourceLocation("big_signs:block/thin_sign_2"), modelState, spriteGetter);
-        BakedModel part3 = baker.bake(new ResourceLocation("big_signs:block/thin_sign_3"), modelState, spriteGetter);
+            part2Variants.put(variant, baker.bake(
+                    new ResourceLocation("big_signs:block/thin_" + variant.getSerializedName() + "_sign_2"),
+                    modelState, spriteGetter));
 
-        if (part1 == null || part2 == null || part3 == null) { // should never happen, but just to be safe
-            throw new IllegalStateException("ThinSign parts failed to bake!");
+            part3Variants.put(variant, baker.bake(
+                    new ResourceLocation("big_signs:block/thin_" + variant.getSerializedName() + "_sign_3"),
+                    modelState, spriteGetter));
         }
 
-        return new ThinSignBakedModel(List.of(part1, part2, part3));
+        return new ThinSignBakedModel(part1Variants, part2Variants, part3Variants);
     }
 
     private static class ThinSignBakedModel implements BakedModel {
-        private final List<BakedModel> parts;
+        private final Map<SignVariants, BakedModel> part1Variants;
+        private final Map<SignVariants, BakedModel> part2Variants;
+        private final Map<SignVariants, BakedModel> part3Variants;
 
-        public ThinSignBakedModel(List<BakedModel> parts) {
-            this.parts = parts;
+        public ThinSignBakedModel(Map<SignVariants, BakedModel> part1,
+                                  Map<SignVariants, BakedModel> part2,
+                                  Map<SignVariants, BakedModel> part3) {
+            this.part1Variants = part1;
+            this.part2Variants = part2;
+            this.part3Variants = part3;
         }
 
         @Deprecated
@@ -61,12 +79,29 @@ public class ThinSignModel implements IUnbakedGeometry<ThinSignModel> {
         public List<BakedQuad> getQuads(BlockState state, Direction side, RandomSource rand, ModelData data, RenderType renderType) {
             List<BakedQuad> quads = new ArrayList<>();
             if (state != null) {
-                if (state.getValue(ThinSignBlock.PART1)) // dynamically show model parts based on BlockState
-                    quads.addAll(parts.get(0).getQuads(state, side, rand, data, renderType));
-                if (state.getValue(ThinSignBlock.PART2))
-                    quads.addAll(parts.get(1).getQuads(state, side, rand, data, renderType));
-                if (state.getValue(ThinSignBlock.PART3))
-                    quads.addAll(parts.get(2).getQuads(state, side, rand, data, renderType));
+                if (state.getValue(ThinSignBlock.PART1)) { // dynamically switch on/off the model parts, depending on which block states are true
+                    SignVariants variant1 = state.getValue(ThinSignBlock.VARIANT1);
+                    BakedModel model = part1Variants.get(variant1); // get the correct model for the block state
+                    if (model != null) {
+                        quads.addAll(model.getQuads(state, side, rand, data, renderType));
+                    }
+                }
+
+                if (state.getValue(ThinSignBlock.PART2)) {
+                    SignVariants variant2 = state.getValue(ThinSignBlock.VARIANT2);
+                    BakedModel model = part2Variants.get(variant2);
+                    if (model != null) {
+                        quads.addAll(model.getQuads(state, side, rand, data, renderType));
+                    }
+                }
+
+                if (state.getValue(ThinSignBlock.PART3)) {
+                    SignVariants variant3 = state.getValue(ThinSignBlock.VARIANT3);
+                    BakedModel model = part3Variants.get(variant3);
+                    if (model != null) {
+                        quads.addAll(model.getQuads(state, side, rand, data, renderType));
+                    }
+                }
             }
             return quads;
         }
@@ -93,12 +128,12 @@ public class ThinSignModel implements IUnbakedGeometry<ThinSignModel> {
 
         @Override
         public TextureAtlasSprite getParticleIcon() {
-            return parts.get(0).getParticleIcon();
+            return part1Variants.get(SignVariants.BLACK_METAL).getParticleIcon();
         }
 
         @Override
         public ItemOverrides getOverrides() {
-            return parts.get(0).getOverrides();
+            return ItemOverrides.EMPTY;
         }
     }
 }

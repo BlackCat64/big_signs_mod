@@ -1,0 +1,7 @@
+{
+  "parent": "big_signs:block/thin_sign_base",
+  "textures": {
+    "texture": "big_signs:block/black_metal",
+    "particle": "big_signs:block/black_metal"
+  }
+}
