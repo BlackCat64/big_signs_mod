@@ -8,6 +8,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.StandingSignBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -322,6 +323,8 @@ public class ModBlocks {
      */
     public static final RegistryObject<Block> THIN_SIGN = BLOCKS.register("thin_sign",
             () -> new ThinSignBlock(METAL_WALL_SIGN_PROPERTIES, ModWoodTypes.BLACK_METAL_SIGN));
+    public static final RegistryObject<Block> THIN_SIGN_FLOOR = BLOCKS.register("thin_sign_floor",
+            () -> new StandingSignBlock(METAL_SIGN_PROPERTIES, ModWoodTypes.BLACK_METAL_SIGN));
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));

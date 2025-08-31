@@ -176,7 +176,7 @@ public class ModItems {
     *   THIN SIGN ITEMS
      */
     public static final RegistryObject<Item> THIN_OAK_SIGN = ITEMS.register("thin_oak_sign",
-            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.THIN_SIGN.get(), ModBlocks.THIN_SIGN.get()));
+            () -> new ThinSignItem(new Item.Properties().stacksTo(16), ModBlocks.THIN_SIGN_FLOOR.get(), ModBlocks.THIN_SIGN.get(), "oak"));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
