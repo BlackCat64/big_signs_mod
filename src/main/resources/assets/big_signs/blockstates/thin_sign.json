@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "big_signs:block/thin_sign_base" }
+  }
+}

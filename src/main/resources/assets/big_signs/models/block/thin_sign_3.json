@@ -1,0 +1,20 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"elements": [
+		{
+			"name": "sign3",
+			"from": [0, 0, 0],
+			"to": [16, 5, 2],
+			"color": 0,
+			"faces": {
+				"north": {"uv": [-12, 2, 4, 7], "texture": "#texture"},
+				"east": {"uv": [-14, 2, -12, 7], "texture": "#texture"},
+				"south": {"uv": [6, 2, 22, 7], "texture": "#texture"},
+				"west": {"uv": [4, 2, 6, 7], "texture": "#texture"},
+				"up": {"uv": [4, 2, -12, 0], "texture": "#texture"},
+				"down": {"uv": [20, 0, 4, 2], "texture": "#texture"}
+			}
+		}
+	]
+}
