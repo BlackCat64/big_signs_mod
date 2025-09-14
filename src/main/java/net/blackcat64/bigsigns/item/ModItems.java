@@ -2,6 +2,7 @@ package net.blackcat64.bigsigns.item;
 
 import net.blackcat64.bigsigns.BigSignsMod;
 import net.blackcat64.bigsigns.block.ModBlocks;
+import net.blackcat64.bigsigns.block.SignVariants;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SignItem;
 import net.minecraft.world.item.HangingSignItem;
@@ -176,7 +177,7 @@ public class ModItems {
     *   THIN SIGN ITEMS
      */
     public static final RegistryObject<Item> THIN_OAK_SIGN = ITEMS.register("thin_oak_sign",
-            () -> new ThinSignItem(new Item.Properties().stacksTo(16), ModBlocks.THIN_SIGN_FLOOR.get(), ModBlocks.THIN_SIGN.get(), "oak"));
+            () -> new ThinSignItem(new Item.Properties().stacksTo(16), ModBlocks.THIN_SIGN_FLOOR.get(), ModBlocks.THIN_SIGN.get(), SignVariants.OAK));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

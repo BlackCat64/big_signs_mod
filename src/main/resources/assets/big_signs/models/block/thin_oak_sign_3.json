@@ -1,7 +1,7 @@
 {
-  "parent": "big_signs:block/thin_sign_base",
+  "parent": "big_signs:block/thin_sign_3",
   "textures": {
-    "texture": "big_signs:block/black_metal",
+    "sign_texture": "big_signs:block/black_metal",
     "particle": "big_signs:block/black_metal"
   }
 }
