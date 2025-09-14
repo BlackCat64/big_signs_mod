@@ -320,7 +320,7 @@ public class ModBlocks {
 
     /*
     *   THIN SIGNS
-     */
+    */
     public static final RegistryObject<Block> THIN_SIGN = BLOCKS.register("thin_sign",
             () -> new ThinSignBlock(METAL_WALL_SIGN_PROPERTIES, ModWoodTypes.BLACK_METAL_SIGN));
     public static final RegistryObject<Block> THIN_SIGN_FLOOR = BLOCKS.register("thin_sign_floor",

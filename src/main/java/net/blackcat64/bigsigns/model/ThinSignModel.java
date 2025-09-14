@@ -15,6 +15,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.client.model.data.ModelData;
+import net.minecraftforge.client.model.data.ModelProperty;
 import net.minecraftforge.client.model.geometry.IGeometryBakingContext;
 import net.minecraftforge.client.model.geometry.IUnbakedGeometry;
 import org.jetbrains.annotations.NotNull;
@@ -27,6 +28,10 @@ import java.util.Map;
 import java.util.function.Function;
 
 public class ThinSignModel implements IUnbakedGeometry<ThinSignModel> {
+
+    public static final ModelProperty<SignVariants> VARIANT1_PROP = new ModelProperty<>();
+    public static final ModelProperty<SignVariants> VARIANT2_PROP = new ModelProperty<>();
+    public static final ModelProperty<SignVariants> VARIANT3_PROP = new ModelProperty<>();
 
     private final Map<SignVariants, BakedModel> part1Variants = new EnumMap<>(SignVariants.class);
     private final Map<SignVariants, BakedModel> part2Variants = new EnumMap<>(SignVariants.class);
@@ -66,7 +71,7 @@ public class ThinSignModel implements IUnbakedGeometry<ThinSignModel> {
                                   Map<SignVariants, BakedModel> part3) {
             this.part1Variants = part1;
             this.part2Variants = part2;
-            this.part3Variants = part3;
+            this.part3Variants = part3; // pre-compiled maps get passed in from outer class
         }
 
         @Deprecated
@@ -78,33 +83,21 @@ public class ThinSignModel implements IUnbakedGeometry<ThinSignModel> {
         @Override
         public List<BakedQuad> getQuads(BlockState state, Direction side, RandomSource rand, ModelData data, RenderType renderType) {
             List<BakedQuad> quads = new ArrayList<>();
-            if (state != null) {
-                if (state.getValue(ThinSignBlock.PART1)) { // dynamically switch on/off the model parts, depending on which block states are true
-                    SignVariants variant1 = state.getValue(ThinSignBlock.VARIANT1);
-                    BakedModel model = part1Variants.get(variant1); // get the correct model for the block state
-                    if (model != null) {
-                        quads.addAll(model.getQuads(state, side, rand, data, renderType));
-                    }
-                }
 
-                if (state.getValue(ThinSignBlock.PART2)) {
-                    SignVariants variant2 = state.getValue(ThinSignBlock.VARIANT2);
-                    BakedModel model = part2Variants.get(variant2);
-                    if (model != null) {
-                        quads.addAll(model.getQuads(state, side, rand, data, renderType));
-                    }
-                }
+            SignVariants v1 = data.get(ThinSignModel.VARIANT1_PROP);
+            SignVariants v2 = data.get(ThinSignModel.VARIANT2_PROP);
+            SignVariants v3 = data.get(ThinSignModel.VARIANT3_PROP);
 
-                if (state.getValue(ThinSignBlock.PART3)) {
-                    SignVariants variant3 = state.getValue(ThinSignBlock.VARIANT3);
-                    BakedModel model = part3Variants.get(variant3);
-                    if (model != null) {
-                        quads.addAll(model.getQuads(state, side, rand, data, renderType));
-                    }
-                }
-            }
+            if (v1 != null)
+                quads.addAll(part1Variants.get(v1).getQuads(state, side, rand, data, renderType));
+            if (v2 != null)
+                quads.addAll(part2Variants.get(v2).getQuads(state, side, rand, data, renderType));
+            if (v3 != null)
+                quads.addAll(part3Variants.get(v3).getQuads(state, side, rand, data, renderType));
+
             return quads;
         }
+
 
         @Override
         public boolean useAmbientOcclusion() {

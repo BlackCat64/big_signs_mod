@@ -2,6 +2,9 @@ package net.blackcat64.bigsigns.block;
 
 import net.minecraft.util.StringRepresentable;
 
+import javax.annotation.Nullable;
+import java.util.HashMap;
+
 public enum SignVariants implements StringRepresentable {
     ACACIA("acacia"),
     BAMBOO("bamboo"),
@@ -37,6 +40,7 @@ public enum SignVariants implements StringRepresentable {
     YELLOW_METAL("yellow_metal");
 
     private final String name;
+    private static final HashMap<String, SignVariants> BY_NAME_MAP = new HashMap<>();
 
     SignVariants(String name) {
         this.name = name;
@@ -45,5 +49,17 @@ public enum SignVariants implements StringRepresentable {
     @Override
     public String getSerializedName() {
         return this.name;
+    }
+
+    public static @Nullable SignVariants byName(String name) {
+        if (BY_NAME_MAP.isEmpty()) {
+            for (SignVariants v : values()) { // cache key-value pairs for efficient lookup
+                BY_NAME_MAP.put(v.name, v);
+            }
+        }
+        if (BY_NAME_MAP.containsKey(name.toLowerCase())) { // if the key exists (ignoring case), return the enum value
+            return BY_NAME_MAP.get(name);
+        }
+        return null;
     }
 }
