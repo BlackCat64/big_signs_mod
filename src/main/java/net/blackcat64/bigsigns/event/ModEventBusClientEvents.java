@@ -5,6 +5,7 @@ import net.blackcat64.bigsigns.block.entity.ModBlockEntities;
 import net.blackcat64.bigsigns.model.ThinSignModelLoader;
 import net.blackcat64.bigsigns.renderer.OneLineHangingSignRenderer;
 import net.blackcat64.bigsigns.renderer.OneLineSignRenderer;
+import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.client.event.ModelEvent;
@@ -17,6 +18,7 @@ public class ModEventBusClientEvents {
     public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
         event.registerBlockEntityRenderer(ModBlockEntities.ONE_LINE_SIGN.get(), OneLineSignRenderer::new);
         event.registerBlockEntityRenderer(ModBlockEntities.ONE_LINE_HANGING_SIGN.get(), OneLineHangingSignRenderer::new);
+        event.registerBlockEntityRenderer(ModBlockEntities.THIN_SIGN.get(), SignRenderer::new);
     }
 
     @SubscribeEvent

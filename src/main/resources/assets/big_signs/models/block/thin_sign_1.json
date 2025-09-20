@@ -3,7 +3,7 @@
 	"credit": "Made with Blockbench",
 	"elements": [
 		{
-			"name": "sign1",
+			"name": "thin_sign_1",
 			"from": [0, 11, 0],
 			"to": [16, 16, 2],
 			"rotation": {"angle": 0, "axis": "y", "origin": [0, 11, 0]},

@@ -1,7 +1,7 @@
 {
   "parent": "big_signs:block/thin_sign_1",
   "textures": {
-    "sign_texture": "big_signs:block/black_metal",
-    "particle": "big_signs:block/black_metal"
+    "sign_texture": "minecraft:entity/signs/oak",
+    "particle": "minecraft:block/oak_planks"
   }
 }

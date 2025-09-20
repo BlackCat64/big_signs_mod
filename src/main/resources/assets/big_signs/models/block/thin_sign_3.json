@@ -3,7 +3,7 @@
 	"credit": "Made with Blockbench",
 	"elements": [
 		{
-			"name": "sign3",
+			"name": "thin_sign_3",
 			"from": [0, 0, 0],
 			"to": [16, 5, 2],
 			"color": 0,
